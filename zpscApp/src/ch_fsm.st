@@ -259,7 +259,7 @@ ss OFF_ON_FSM {
        	    	pvPut(dac_ofst);  
        	    	dac_adc_ofst = 0; 
        	    	pvPut(dac_adc_ofst);       	    	
-       } state READBACK_DCCT1_ADC_OFFSET
+       	    } state READBACK_DCCT1_ADC_OFFSET
         when(ps_on_off == 1) {
 		Park = 1; 
 		pvPut(Park); 
@@ -284,8 +284,9 @@ ss OFF_ON_FSM {
     	when(from_faulted_state == 0){
     		ps_on_off_sts = 1;
         	pvPut(ps_on_off_sts); 
-    	    } state IDLE
-    	when(from_faulted_state == 1) { //System has previously faulted and we are retrying
+    	    } state HALT1
+/*    	
+	when(from_faulted_state == 1) { //System has previously faulted and we are retrying
     		from_faulted_state = 0; 
 		Park = 1; 
 		pvPut(Park); 
@@ -296,6 +297,13 @@ ss OFF_ON_FSM {
             	sprintf(Chan_seq_messages, "Zeroing DAC");
        	    	pvPut(Chan_seq_messages);    		
     	} state SET_DAC_TO_ZERO_ON
+*/
+    }
+    
+    //Tight loop was taking up CPU usage.  This delay made a major difference.
+    state HALT1 {
+    	when(delay(0.1)) {
+    	} state IDLE
     }
     	
     state SET_DAC_TO_ZERO_ON {
@@ -355,7 +363,6 @@ ss OFF_ON_FSM {
         }
 	state DONE_CHECK_BIPOLAR{
 		when (ps_on_sts_bip == 0) {	
-			//from_faulted_state = 1; 
 			ps_on_off_sts = 0;	
 			pvPut(ps_on_off_sts); 				
 		} state RETRY_ON
@@ -364,7 +371,6 @@ ss OFF_ON_FSM {
 	}
 	state DONE_CHECK_UNIPOLAR{
 		when (ps_on_sts_uni == 0) {	
-			//from_faulted_state = 1; 
 			ps_on_off_sts = 0;	
 			pvPut(ps_on_off_sts); 				
 		} state RETRY_ON
@@ -419,7 +425,7 @@ ss OFF_ON_FSM {
 		when(sum_fault == 0){
 		} state READY
 		when(sum_fault > 0) {
-			from_faulted_state = 1; 
+			//from_faulted_state = 1; 
 			ps_on_off_sts = 2; 
 			pvPut(ps_on_off_sts); 
 			sprintf(Chan_seq_messages, "Faulted..Try Again"); 

@@ -754,13 +754,13 @@ record(stringout, "$(P){$(NO)}Chan$(CHAN)_atzo_dbg3_messages") {
 record(bo, "$(P){$(NO)}Chan$(CHAN):PSOnOff-SP") {
     field(ZNAM, "LOW")
     field(ONAM, "HIGH")  
-    field(HIGH,".01")    #500 ms after low
+    field(HIGH,".3")    #300 ms after low
 }
 
 record(bo,"$(P){$(NO)}Chan$(CHAN):AutoZero-SP") {
     field(ZNAM, "LOW")
     field(ONAM, "HIGH")  
-    field(HIGH,".01")    #500 ms after low
+    field(HIGH,".3")    #300 ms after low
 }
 
 #-----------------------------------------------
