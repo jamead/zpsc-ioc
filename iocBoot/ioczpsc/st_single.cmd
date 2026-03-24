@@ -22,7 +22,7 @@ cd "${TOP}"
 
 ## Register all support components
 dbLoadDatabase "dbd/zpsc.dbd"
-dbLoadDatabase("dbd/seq.dbd")
+#dbLoadDatabase("dbd/seq.dbd")
 
 zpsc_registerRecordDeviceDriver pdbbase
 

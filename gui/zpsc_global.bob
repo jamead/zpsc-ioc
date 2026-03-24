@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-09 09:39:31 by mead-->
+<!--Saved on 2026-03-05 08:28:14 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -1965,7 +1965,7 @@ $(pv_value)</tooltip>
       <name>Action Button_34</name>
       <actions>
         <action type="open_display">
-          <file>zpsc_chan_bipolar.opi</file>
+          <file>zpsc_chan_bipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -2011,7 +2011,7 @@ $(pv_value)</tooltip>
         </action>
       </actions>
       <text>Ch1 - Unipolar</text>
-      <x>35</x>
+      <x>34</x>
       <y>14</y>
       <font>
         <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
@@ -3219,7 +3219,6 @@ $(pv_value)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_172</name>
       <text>IP Addr</text>
-      <x>-1</x>
       <y>6</y>
       <width>92</width>
       <horizontal_alignment>2</horizontal_alignment>
