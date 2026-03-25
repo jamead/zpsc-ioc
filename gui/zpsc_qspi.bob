@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-06 15:55:58 by mead-->
+<!--Saved on 2026-03-25 15:42:50 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>1120</width>
@@ -3015,9 +3015,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_80</name>
-      <text>Fault 1: Bipolar Supply</text>
+      <text>Channel On</text>
+      <x>47</x>
       <y>403</y>
-      <width>153</width>
+      <width>101</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -3077,9 +3078,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_81</name>
-      <text>Fault 2: HeartBeat</text>
-      <y>425</y>
-      <width>153</width>
+      <text>PDU ACOn / Hearbeat</text>
+      <x>-1</x>
+      <y>424</y>
+      <width>149</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -3139,9 +3141,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_82</name>
-      <text>Fault3 : External Interlock</text>
+      <text>External Interlock</text>
+      <x>24</x>
       <y>446</y>
-      <width>165</width>
+      <width>124</width>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
