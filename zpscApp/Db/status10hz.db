@@ -280,6 +280,27 @@ record(mbbi, "$(P){$(NO)}Ch34-DualMode-Mode") {
     field(SCAN, "Passive")
 }
 
+record(longin, "$(P){$(NO)}MainDipole-I") {
+    field(DESC, "Main Dipole PS")
+    field(DTYP, "PSC Reg")
+    field(INP , "@PSC$(NO) 31 64")
+    field(FLNK, "$(P){$(NO)}MainDipole-Mode")
+    field(SCAN,"I/O Intr")
+}
+
+
+record(mbbi, "$(P){$(NO)}MainDipole-Mode") {
+    field(INP, "$(P){$(NO)}MainDipole-I")
+    field(ZRVL, "0")      
+    field(ZRST, "Disabled")
+    field(ONVL, "1")    
+    field(ONST, "Enabled")
+    field(TWVL, "2")  
+    field(TWST, "Check EEPROM")       
+    field(SCAN, "Passive")
+}
+
+
 
 
 ### PS1 #####
