@@ -139,8 +139,8 @@ $(actions)</tooltip>
     </actions>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_18</name>
-      <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_ON2-SP</pv_name>
-      <x>177</x>
+      <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_Park-SP</pv_name>
+      <x>249</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -154,7 +154,7 @@ $(actions)</tooltip>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_19</name>
       <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Reset-SP</pv_name>
-      <x>247</x>
+      <x>181</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -167,7 +167,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_20</name>
-      <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Park-SP</pv_name>
+      <pv_name>$(PriSys){$(PSC)}Chan3:DigOut_Park-SP</pv_name>
       <x>363</x>
       <y>37</y>
       <width>50</width>
@@ -187,13 +187,9 @@ $(actions)</tooltip>
       <width>50</width>
       <height>21</height>
       <off_color>
-        <color name="Green" red="0" green="255" blue="0">
-        </color>
-      </off_color>
-      <on_color>
         <color name="Text" red="0" green="0" blue="0">
         </color>
-      </on_color>
+      </off_color>
       <foreground_color>
         <color red="192" green="192" blue="192">
         </color>
@@ -218,7 +214,7 @@ $(actions)</tooltip>
         </color>
       </off_color>
       <on_color>
-        <color name="ON" red="0" green="255" blue="0">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <foreground_color>
@@ -261,25 +257,10 @@ $(actions)</tooltip>
       </actions>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>Label_237</name>
-      <text>-</text>
-      <x>171</x>
-      <y>11</y>
-      <width>72</width>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <actions>
-      </actions>
-      <border_color>
-        <color red="0" green="128" blue="255">
-        </color>
-      </border_color>
-    </widget>
-    <widget type="label" version="2.0.0">
       <name>Label_238</name>
-      <text>-</text>
-      <x>241</x>
-      <y>11</y>
+      <text>Reset</text>
+      <x>174</x>
+      <y>13</y>
       <width>63</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -292,9 +273,9 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_239</name>
-      <text>Park</text>
+      <text>Park3</text>
       <x>361</x>
-      <y>11</y>
+      <y>14</y>
       <width>50</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
@@ -307,7 +288,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_240</name>
-      <text>-</text>
+      <text>PS ON</text>
       <x>419</x>
       <y>11</y>
       <width>78</width>
@@ -322,10 +303,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_241</name>
-      <text>-</text>
+      <text>PS Fault</text>
       <x>506</x>
       <y>11</y>
-      <width>52</width>
+      <width>61</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -379,7 +360,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_279</name>
-      <text>-</text>
+      <text>Ext Flt</text>
       <x>672</x>
       <y>11</y>
       <width>49</width>
@@ -394,8 +375,8 @@ $(actions)</tooltip>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_25</name>
-      <pv_name>$(PriSys){$(PSC)}$(CHAN):DigOut_Spare-SP</pv_name>
-      <x>307</x>
+      <pv_name>$(PriSys){$(PSC)}Chan2:DigOut_Park-SP</pv_name>
+      <x>306</x>
       <y>37</y>
       <width>50</width>
       <height>21</height>
@@ -408,10 +389,25 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_281</name>
-      <text>-</text>
+      <text>Park2</text>
       <x>311</x>
-      <y>11</y>
+      <y>13</y>
       <width>41</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_243</name>
+      <text>Park1</text>
+      <x>249</x>
+      <y>13</y>
+      <width>50</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -446,7 +442,7 @@ $(actions)</tooltip>
     </actions>
     <widget type="label" version="2.0.0">
       <name>Label_151</name>
-      <text>-</text>
+      <text>Loopback (A)</text>
       <x>70</x>
       <y>8</y>
       <width>91</width>
@@ -461,7 +457,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_152</name>
-      <text>PS2Vout</text>
+      <text>Dcct1 (A)</text>
       <x>170</x>
       <y>8</y>
       <width>91</width>
@@ -476,7 +472,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_153</name>
-      <text>-</text>
+      <text>Dcct2 (A)</text>
       <x>270</x>
       <y>8</y>
       <width>91</width>
@@ -506,7 +502,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_155</name>
-      <text>Ctrl (V)</text>
+      <text>Ch1 Ctrl (V)</text>
       <x>470</x>
       <y>8</y>
       <width>91</width>
@@ -521,7 +517,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_156</name>
-      <text>Liqua2</text>
+      <text>-</text>
       <x>570</x>
       <y>8</y>
       <width>91</width>
@@ -536,7 +532,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_157</name>
-      <text>Vdrop2</text>
+      <text>Gnd Curr (mA)</text>
       <x>662</x>
       <y>8</y>
       <width>107</width>
@@ -1257,7 +1253,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_164</name>
-      <text>Vout Intrlck</text>
+      <text>Dcct1 Intrlck</text>
       <x>169</x>
       <y>117</y>
       <width>91</width>
@@ -1272,7 +1268,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_165</name>
-      <text>-</text>
+      <text>Dcct2 Intrlck</text>
       <x>269</x>
       <y>117</y>
       <width>91</width>
@@ -1317,7 +1313,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_168</name>
-      <text>Liqua Intrlck</text>
+      <text>-</text>
       <x>569</x>
       <y>117</y>
       <width>91</width>
@@ -1332,7 +1328,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_169</name>
-      <text>Vdrop Intrlck</text>
+      <text>Gnd I Intrlck</text>
       <x>669</x>
       <y>117</y>
       <width>91</width>
@@ -1400,11 +1396,12 @@ $(actions)</tooltip>
       <x>438</x>
       <y>15</y>
       <height>175</height>
-      <title>PS2 Vout</title>
+      <title>DCCT1</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </title_font>
+      <show_legend>false</show_legend>
       <actions>
       </actions>
       <x_axis>
@@ -1473,7 +1470,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>15</y>
       <height>175</height>
-      <title>-</title>
+      <title>DAC Loop Back</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1547,7 +1544,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>585</y>
       <height>175</height>
-      <title>PS2 Series Pass Vdrop</title>
+      <title>Ignd</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1769,7 +1766,7 @@ $(actions)</tooltip>
       <x>438</x>
       <y>395</y>
       <height>175</height>
-      <title>PS2 Liquablade Vout</title>
+      <title>-</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1884,7 +1881,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>205</y>
       <height>175</height>
-      <title>-</title>
+      <title>DCCT2</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1958,7 +1955,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>395</y>
       <height>175</height>
-      <title>PS2 Series Pass Control</title>
+      <title>Regulator</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -2403,14 +2400,14 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_100</name>
-      <text>PS2 OVV</text>
+      <text>DCCT 1 OverCurrent</text>
       <x>157</x>
       <y>337</y>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_101</name>
-      <text>-</text>
+      <text>DCCT 2 OverCurrent</text>
       <x>157</x>
       <y>317</y>
       <width>191</width>
@@ -2438,21 +2435,21 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_106</name>
-      <text>LPE2 Vdrop</text>
+      <text>iGnd Current</text>
       <x>157</x>
       <y>237</y>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_107</name>
-      <text>-</text>
+      <text>DCCT Status </text>
       <x>157</x>
       <y>217</y>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_108</name>
-      <text>-</text>
+      <text>Power Supply Fault</text>
       <x>157</x>
       <y>197</y>
       <width>191</width>
@@ -2644,8 +2641,8 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_111</name>
-      <text>-</text>
-      <x>142</x>
+      <text>PS ON Fault</text>
+      <x>157</x>
       <y>137</y>
       <width>165</width>
     </widget>
@@ -2739,7 +2736,7 @@ $(actions)</tooltip>
     </actions>
     <widget type="label" version="2.0.0">
       <name>Label_127</name>
-      <text>-</text>
+      <text>RampRate</text>
       <x>4</x>
       <y>13</y>
       <width>101</width>
@@ -2922,7 +2919,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_126</name>
-      <text>PS Vout</text>
+      <text>DAC, DCCT's</text>
       <x>5</x>
       <y>47</y>
       <width>88</width>
@@ -2936,8 +2933,23 @@ $(actions)</tooltip>
       </border_color>
     </widget>
     <widget type="label" version="2.0.0">
+      <name>Label_131</name>
+      <text>-</text>
+      <x>28</x>
+      <y>70</y>
+      <width>61</width>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
       <name>Label_132</name>
-      <text>Vdrop</text>
+      <text>Ignd</text>
       <x>5</x>
       <y>93</y>
       <width>88</width>
@@ -2997,7 +3009,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_267</name>
-      <text>-</text>
+      <text>Amps/Sec</text>
       <x>212</x>
       <y>9</y>
       <width>80</width>
@@ -3012,7 +3024,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_268</name>
-      <text>Volt/Volt</text>
+      <text>mA/Volt</text>
       <x>212</x>
       <y>88</y>
       <width>80</width>
@@ -3027,7 +3039,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_269</name>
-      <text>Volt/Volt</text>
+      <text>Volts/Volt</text>
       <x>211</x>
       <y>65</y>
       <width>80</width>
@@ -3042,7 +3054,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_270</name>
-      <text>Volt/Volt</text>
+      <text>Amps/Volt</text>
       <x>212</x>
       <y>134</y>
       <width>80</width>
@@ -3057,7 +3069,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_271</name>
-      <text>Volt/Volt</text>
+      <text>Amps/Volt</text>
       <x>211</x>
       <y>159</y>
       <width>80</width>
@@ -3072,7 +3084,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_272</name>
-      <text>Volt/Volt</text>
+      <text>Amps/Volt</text>
       <x>211</x>
       <y>42</y>
       <width>80</width>
@@ -3087,7 +3099,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_273</name>
-      <text>-</text>
+      <text>Volts/ Volt</text>
       <x>212</x>
       <y>112</y>
       <width>80</width>
@@ -3154,7 +3166,7 @@ $(actions)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc_qspi.bob</file>
+          <file>zpsc1_qspi_mdb_CH1.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -3225,7 +3237,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_254</name>
-      <text>-</text>
+      <text>SetPoint (A)</text>
       <x>22</x>
       <y>2</y>
       <width>101</width>
@@ -3289,7 +3301,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_264</name>
-      <text>-</text>
+      <text>DAC Cmd (A)</text>
       <x>239</x>
       <y>7</y>
       <width>130</width>
@@ -3304,7 +3316,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_265</name>
-      <text>-</text>
+      <text>DAC Cmd (adu)</text>
       <x>267</x>
       <y>27</y>
       <width>130</width>
@@ -3367,7 +3379,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_262</name>
-      <text>-</text>
+      <text>DAC Gain</text>
       <x>529</x>
       <y>7</y>
       <width>72</width>
@@ -3382,7 +3394,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_263</name>
-      <text>-</text>
+      <text>DAC Offset</text>
       <x>513</x>
       <y>25</y>
       <width>92</width>
@@ -3397,7 +3409,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_130</name>
-      <text>-</text>
+      <text>PS Mode</text>
       <x>168</x>
       <y>2</y>
       <width>73</width>
@@ -3582,7 +3594,7 @@ $(actions)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc_snapshotsCH2_CH3.bob</file>
+          <file>zpsc1_snapshots_mdb_CH1.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -3723,10 +3735,8 @@ $(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_277</name>
-    <text>zPSC Channel : Unipolar</text>
-    <x>174</x>
-    <y>4</y>
-    <width>273</width>
+    <text>Backup Dipole Power Supply</text>
+    <width>344</width>
     <height>33</height>
     <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -3820,13 +3830,26 @@ $(actions)</tooltip>
       </color>
     </border_color>
   </widget>
+  <widget type="bool_button" version="2.0.0">
+    <name>Boolean Button_9</name>
+    <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON1-SP</pv_name>
+    <x>579</x>
+    <y>11</y>
+    <width>50</width>
+    <height>21</height>
+    <off_label></off_label>
+    <off_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </off_color>
+    <on_label></on_label>
+  </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_131</name>
-    <text>Liqua Vout</text>
-    <x>342</x>
-    <y>515</y>
-    <width>94</width>
-    <horizontal_alignment>2</horizontal_alignment>
+    <name>Label_244</name>
+    <text>CH1 ON1</text>
+    <x>579</x>
+    <width>63</width>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <actions>
     </actions>

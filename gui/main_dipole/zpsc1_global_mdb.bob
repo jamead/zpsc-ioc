@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-03-31 06:56:37 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -807,14 +806,14 @@ $(pv_value)</tooltip>
       <name>Action Button_35</name>
       <actions>
         <action type="open_display">
-          <file>zpsc_chan_maindipole_CH1.bob</file>
+          <description>Open Display</description>
+          <file>zpsc1_chan_mdb_CH1.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>Chan1</CHAN>
           </macros>
           <target>window</target>
-          <description>Open Display</description>
         </action>
       </actions>
       <text>Channel 1</text>
@@ -832,14 +831,14 @@ $(pv_value)</tooltip>
       <name>Action Button_37</name>
       <actions>
         <action type="open_display">
-          <file>zpsc_chan_maindipole_CH2.bob</file>
+          <description>Open Display</description>
+          <file>zpsc1_chan_mdb_CH2-3.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
-            <CHAN>Chan1</CHAN>
+            <CHAN>Chan2</CHAN>
           </macros>
           <target>window</target>
-          <description>Open Display</description>
         </action>
       </actions>
       <text>Channel 2</text>
@@ -857,14 +856,14 @@ $(pv_value)</tooltip>
       <name>Action Button_38</name>
       <actions>
         <action type="open_display">
-          <file>zpsc_chan_maindipole_CH3.bob</file>
+          <description>Open Display</description>
+          <file>zpsc1_chan_mdb_CH2-3.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
-            <CHAN>Chan1</CHAN>
+            <CHAN>Chan3</CHAN>
           </macros>
           <target>window</target>
-          <description>Open Display</description>
         </action>
       </actions>
       <text>Channel 3</text>
@@ -882,14 +881,14 @@ $(pv_value)</tooltip>
       <name>Action Button_39</name>
       <actions>
         <action type="open_display">
-          <file>zpsc_chan_maindipole_CH4.bob</file>
+          <description>Open Display</description>
+          <file>zpsc1_chan_mdb_CH4.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
-            <CHAN>Chan1</CHAN>
+            <CHAN>Chan4</CHAN>
           </macros>
           <target>window</target>
-          <description>Open Display</description>
         </action>
       </actions>
       <text>Channel 4</text>

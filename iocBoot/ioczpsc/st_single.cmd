@@ -7,14 +7,15 @@
 
 epicsEnvSet("IOCNAME", "lab")
 
-epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST", "10.0.142.51")
-epicsEnvSet("EPICS_CAS_AUTO_ADDR_LIST", "NO")
+
+#epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST", "10.0.142.51")
+#epicsEnvSet("EPICS_CAS_AUTO_ADDR_LIST", "NO")
 
 
 
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.115"); 
+epicsEnvSet("PSC1_IP", "192.168.0.11"); 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
 

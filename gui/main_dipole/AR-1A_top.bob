@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-02-05 11:46:41 by mead-->
+<display version="2.0.0">
+  <name>PSC Top</name>
+  <width>850</width>
+  <height>400</height>
+  <background_color>
+    <color red="200" green="215" blue="255">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="label" version="2.0.0">
+    <name>Label_7</name>
+    <text>AR-1A Rack Power Supply Controllers</text>
+    <x>202</x>
+    <y>11</y>
+    <width>444</width>
+    <height>55</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color red="63" green="74" blue="191">
+      </color>
+    </foreground_color>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="37" green="10" blue="247">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_41</name>
+    <actions>
+      <action type="open_display">
+        <file>zpsc_global_4chan_bipolar.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>2</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>AR-1A {2}</text>
+    <x>66</x>
+    <y>129</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_42</name>
+    <actions>
+      <action type="open_display">
+        <file>zpsc_global_4chan_bipolar.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>3</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>AR-1A {3} </text>
+    <x>66</x>
+    <y>163</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_43</name>
+    <actions>
+      <action type="open_display">
+        <file>zpsc_global_2chan_unipolar.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>4</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>AR-1A {4} </text>
+    <x>66</x>
+    <y>196</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_114</name>
+    <pv_name>lab{2}Rtos-Uptime-I</pv_name>
+    <x>600</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_116</name>
+    <pv_name>lab{2}Sys-Temp-I</pv_name>
+    <x>700</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_117</name>
+    <pv_name>lab{3}Rtos-Uptime-I</pv_name>
+    <x>600</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_118</name>
+    <pv_name>lab{4}Rtos-Uptime-I</pv_name>
+    <x>600</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_119</name>
+    <pv_name>lab{3}Sys-Temp-I</pv_name>
+    <x>700</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_120</name>
+    <pv_name>lab{4}Sys-Temp-I</pv_name>
+    <x>700</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_121</name>
+    <pv_name>lab{5}Rtos-Uptime-I</pv_name>
+    <x>600</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_122</name>
+    <pv_name>lab{5}Sys-Temp-I</pv_name>
+    <x>700</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_126</name>
+    <pv_name>lab{2}NumChannels-Mode</pv_name>
+    <x>200</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_127</name>
+    <pv_name>lab{2}Resolution-Mode</pv_name>
+    <x>300</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_128</name>
+    <pv_name>lab{2}Bandwidth-Mode</pv_name>
+    <x>400</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_129</name>
+    <pv_name>lab{3}NumChannels-Mode</pv_name>
+    <x>200</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_130</name>
+    <pv_name>lab{3}Resolution-Mode</pv_name>
+    <x>300</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_131</name>
+    <pv_name>lab{3}Bandwidth-Mode</pv_name>
+    <x>400</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_132</name>
+    <pv_name>lab{4}NumChannels-Mode</pv_name>
+    <x>200</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_133</name>
+    <pv_name>lab{4}Resolution-Mode</pv_name>
+    <x>300</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_134</name>
+    <pv_name>lab{4}Bandwidth-Mode</pv_name>
+    <x>400</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_135</name>
+    <pv_name>lab{5}NumChannels-Mode</pv_name>
+    <x>200</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_136</name>
+    <pv_name>lab{5}Resolution-Mode</pv_name>
+    <x>300</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_137</name>
+    <pv_name>lab{5}Bandwidth-Mode</pv_name>
+    <x>400</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_44</name>
+    <actions>
+      <action type="open_display">
+        <file>zpsc_global_2chan_unipolar.opi</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>5</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>AR-1A {5}</text>
+    <x>66</x>
+    <y>231</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_144</name>
+    <pv_name>lab{2}Polarity-Mode</pv_name>
+    <x>500</x>
+    <y>131</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_145</name>
+    <pv_name>lab{3}Polarity-Mode</pv_name>
+    <x>500</x>
+    <y>164</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_146</name>
+    <pv_name>lab{4}Polarity-Mode</pv_name>
+    <x>500</x>
+    <y>198</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_147</name>
+    <pv_name>lab{5}Polarity-Mode</pv_name>
+    <x>500</x>
+    <y>231</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button_40</name>
+    <actions>
+      <action type="open_display">
+        <file>zpsc_global.bob</file>
+        <macros>
+          <PriSys>lab</PriSys>
+          <PSC>1</PSC>
+        </macros>
+        <target>window</target>
+        <description>Open Display</description>
+      </action>
+    </actions>
+    <text>AR-1A {1}</text>
+    <x>66</x>
+    <y>95</y>
+    <width>116</width>
+    <height>25</height>
+    <font>
+      <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+      </font>
+    </font>
+    <tooltip>$(actions)</tooltip>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_161</name>
+    <text>Uptime</text>
+    <x>618</x>
+    <y>78</y>
+    <width>52</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_162</name>
+    <text>Die Temp (C)</text>
+    <x>697</x>
+    <y>78</y>
+    <width>92</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_164</name>
+    <text>Num Channels</text>
+    <x>191</x>
+    <y>78</y>
+    <width>104</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_165</name>
+    <text>Resolution</text>
+    <x>312</x>
+    <y>78</y>
+    <width>72</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_166</name>
+    <text>Bandwidth</text>
+    <x>410</x>
+    <y>78</y>
+    <width>72</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_138</name>
+    <pv_name>lab{1}Rtos-Uptime-I</pv_name>
+    <x>600</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_139</name>
+    <pv_name>lab{1}Sys-Temp-I</pv_name>
+    <x>700</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_140</name>
+    <pv_name>lab{1}NumChannels-Mode</pv_name>
+    <x>200</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_141</name>
+    <pv_name>lab{1}Resolution-Mode</pv_name>
+    <x>300</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_142</name>
+    <pv_name>lab{1}Bandwidth-Mode</pv_name>
+    <x>400</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_167</name>
+    <text>Polarity</text>
+    <x>511</x>
+    <y>78</y>
+    <width>62</width>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_148</name>
+    <pv_name>lab{1}Polarity-Mode</pv_name>
+    <x>500</x>
+    <y>98</y>
+    <width>90</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <precision>3</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

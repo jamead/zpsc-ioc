@@ -807,7 +807,7 @@ $(pv_value)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc1_chan_maindipole.bob</file>
+          <file>zpsc2_chan_mdb_CH1-2.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -816,10 +816,35 @@ $(pv_value)</tooltip>
           <target>window</target>
         </action>
       </actions>
-      <text>Ch1 - Main Dipole</text>
-      <x>44</x>
+      <text>Channel 1</text>
+      <x>50</x>
       <y>14</y>
-      <width>117</width>
+      <width>83</width>
+      <font>
+        <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
+        </font>
+      </font>
+      <tooltip>$(actions)</tooltip>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_37</name>
+      <actions>
+        <action type="open_display">
+          <description>Open Display</description>
+          <file>zpsc2_chan_mdb_CH1-2.bob</file>
+          <macros>
+            <PriSys>lab</PriSys>
+            <PSC>$(PSC)</PSC>
+            <CHAN>Chan2</CHAN>
+          </macros>
+          <target>window</target>
+        </action>
+      </actions>
+      <text>Channel 2</text>
+      <x>250</x>
+      <y>14</y>
+      <width>83</width>
       <font>
         <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
         </font>
@@ -832,33 +857,23 @@ $(pv_value)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc_chan_bipolar.opi</file>
+          <file>zpsc2_chan_mdb_CH3.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
-            <CHAN>Chan2</CHAN>
+            <CHAN>Chan3</CHAN>
           </macros>
           <target>window</target>
         </action>
       </actions>
-      <text>Ch2 - Bipolar</text>
-      <x>235</x>
+      <text>Channel 3</text>
+      <x>450</x>
       <y>14</y>
+      <width>83</width>
       <font>
         <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
         </font>
       </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0">
-            <value>true</value>
-          </exp>
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}Chan2:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
@@ -867,42 +882,7 @@ $(pv_value)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
-          <macros>
-            <PriSys>lab</PriSys>
-            <PSC>$(PSC)</PSC>
-            <CHAN>Chan2</CHAN>
-          </macros>
-          <target>window</target>
-        </action>
-      </actions>
-      <text>Ch2 - Unipolar</text>
-      <x>235</x>
-      <y>14</y>
-      <font>
-        <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0">
-            <value>false</value>
-          </exp>
-          <exp bool_exp="pv0 == 1">
-            <value>true</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}Chan2:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_44</name>
-      <actions>
-        <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc_chan_bipolar.bob</file>
+          <file>zpsc1_chan_maindipole_CH4.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -911,121 +891,14 @@ $(pv_value)</tooltip>
           <target>window</target>
         </action>
       </actions>
-      <text>Ch4 - Bipolar</text>
-      <x>639</x>
+      <text>Channel 4</text>
+      <x>650</x>
       <y>14</y>
+      <width>83</width>
       <font>
         <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
         </font>
       </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0 || pv1 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-          <pv_name>$(PriSys){$(PSC)}Chan4:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_43</name>
-      <actions>
-        <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
-          <macros>
-            <PriSys>lab</PriSys>
-            <PSC>$(PSC)</PSC>
-            <CHAN>Chan4</CHAN>
-          </macros>
-          <target>window</target>
-        </action>
-      </actions>
-      <text>Ch4 - Unipolar</text>
-      <x>639</x>
-      <y>14</y>
-      <font>
-        <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0 || pv1 == 0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-          <pv_name>$(PriSys){$(PSC)}Chan4:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_46</name>
-      <actions>
-        <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc_chan_bipolar.bob</file>
-          <macros>
-            <PriSys>lab</PriSys>
-            <PSC>$(PSC)</PSC>
-            <CHAN>Chan3</CHAN>
-          </macros>
-          <target>window</target>
-        </action>
-      </actions>
-      <text>Ch3 - Bipolar</text>
-      <x>445</x>
-      <y>14</y>
-      <font>
-        <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0 || pv1 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-          <pv_name>$(PriSys){$(PSC)}Chan3:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
-      <tooltip>$(actions)</tooltip>
-      <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Action Button_45</name>
-      <actions>
-        <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
-          <macros>
-            <PriSys>lab</PriSys>
-            <PSC>$(PSC)</PSC>
-            <CHAN>Chan3</CHAN>
-          </macros>
-          <target>window</target>
-        </action>
-      </actions>
-      <text>Ch3 - Unipolar</text>
-      <x>445</x>
-      <y>14</y>
-      <font>
-        <font name="Header1" family="Sans" style="BOLD" size="9.900990099009901">
-        </font>
-      </font>
-      <rules>
-        <rule name="New Rule" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 0 || pv1 == 0">
-            <value>false</value>
-          </exp>
-          <pv_name>$(PriSys){$(PSC)}NumChannels-I</pv_name>
-          <pv_name>$(PriSys){$(PSC)}Chan3:Polarity-Bit</pv_name>
-        </rule>
-      </rules>
       <tooltip>$(actions)</tooltip>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>

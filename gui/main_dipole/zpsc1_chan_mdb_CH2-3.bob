@@ -322,7 +322,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_241</name>
-      <text>-</text>
+      <text>PS Fault</text>
       <x>506</x>
       <y>11</y>
       <width>52</width>
@@ -461,7 +461,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_152</name>
-      <text>PS1Vout</text>
+      <text>PSVout</text>
       <x>170</x>
       <y>8</y>
       <width>91</width>
@@ -521,7 +521,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_156</name>
-      <text>Liqua1</text>
+      <text>LiquaVout</text>
       <x>570</x>
       <y>8</y>
       <width>91</width>
@@ -536,7 +536,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_157</name>
-      <text>Vdrop1</text>
+      <text>Vdrop</text>
       <x>662</x>
       <y>8</y>
       <width>107</width>
@@ -1400,7 +1400,7 @@ $(actions)</tooltip>
       <x>438</x>
       <y>15</y>
       <height>175</height>
-      <title>PS1 Vout</title>
+      <title>PS Vout</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1547,7 +1547,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>585</y>
       <height>175</height>
-      <title>PS1 Series Pass Vdrop</title>
+      <title>PS Series Pass Vdrop</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1769,7 +1769,7 @@ $(actions)</tooltip>
       <x>438</x>
       <y>395</y>
       <height>175</height>
-      <title>PS1 Liquablade Vout</title>
+      <title>PS Liquablade Vout</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1958,7 +1958,7 @@ $(actions)</tooltip>
       <x>23</x>
       <y>395</y>
       <height>175</height>
-      <title>PS1 Series Pass Control</title>
+      <title>PS Series Pass Control</title>
       <title_font>
         <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -2403,7 +2403,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_100</name>
-      <text>PS1 OVV</text>
+      <text>PS OVV</text>
       <x>157</x>
       <y>337</y>
       <width>191</width>
@@ -2438,7 +2438,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_106</name>
-      <text>LPE1 Vdrop</text>
+      <text>LPE Vdrop</text>
       <x>157</x>
       <y>237</y>
       <width>191</width>
@@ -2452,7 +2452,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_108</name>
-      <text>-</text>
+      <text>Flt1-PS Fault</text>
       <x>157</x>
       <y>197</y>
       <width>191</width>
@@ -3154,7 +3154,7 @@ $(actions)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc_qspi.bob</file>
+          <file>zpsc1_qspi_mdb_CH2-3.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -3582,7 +3582,7 @@ $(actions)</tooltip>
       <actions>
         <action type="open_display">
           <description>Open Display</description>
-          <file>zpsc_snapshotsCH2_CH3.bob</file>
+          <file>zpsc1_snapshots_mdb_CH2-3.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
@@ -3722,17 +3722,12 @@ $(actions)</tooltip>
     <tooltip>$(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_277</name>
-    <text>zPSC Channel : Unipolar</text>
-    <x>174</x>
-    <y>4</y>
-    <width>273</width>
-    <height>33</height>
-    <font>
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
-      </font>
-    </font>
-    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_131</name>
+    <text>Liqua Vout</text>
+    <x>342</x>
+    <y>515</y>
+    <width>94</width>
+    <horizontal_alignment>2</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <actions>
     </actions>
@@ -3741,92 +3736,17 @@ $(actions)</tooltip>
       </color>
     </border_color>
   </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button_28</name>
-    <pv_name>$(PriSys){$(PSC)}$(CHAN):PSOnOff-SP</pv_name>
-    <x>54</x>
-    <y>67</y>
-    <width>90</width>
-    <height>27</height>
-    <off_label></off_label>
-    <on_label></on_label>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_86</name>
-    <pv_name>$(PriSys){$(PSC)}$(CHAN)_seq_messages</pv_name>
-    <x>34</x>
-    <y>94</y>
-    <width>136</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
-  <widget type="textentry" version="3.0.0">
-    <name>Text Update_88</name>
-    <pv_name>$(PriSys){$(PSC)}$(CHAN):PSOnOff-STS</pv_name>
-    <x>34</x>
-    <y>114</y>
-    <width>134</width>
-    <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
-      </font>
-    </font>
-    <background_color>
-      <color red="255" green="255" blue="255">
-      </color>
-    </background_color>
-    <precision>0</precision>
-    <horizontal_alignment>1</horizontal_alignment>
-    <actions>
-    </actions>
-    <rules>
-      <rule name="Rule" prop_id="background_color" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>
-            <color name="MAJOR" red="255" green="0" blue="0">
-            </color>
-          </value>
-        </exp>
-        <exp bool_exp="pv0==1">
-          <value>
-            <color name="OK" red="0" green="255" blue="0">
-            </color>
-          </value>
-        </exp>
-        <exp bool_exp="pv0==2">
-          <value>
-            <color name="Attention" red="255" green="160" blue="0">
-            </color>
-          </value>
-        </exp>
-        <pv_name>$(PriSys){$(PSC)}$(CHAN):PSOnOff-STS</pv_name>
-      </rule>
-    </rules>
-    <border_color>
-      <color red="0" green="128" blue="255">
-      </color>
-    </border_color>
-  </widget>
   <widget type="label" version="2.0.0">
-    <name>Label_131</name>
-    <text>Liqua Vout</text>
-    <x>342</x>
-    <y>515</y>
-    <width>94</width>
-    <horizontal_alignment>2</horizontal_alignment>
+    <name>Label_287</name>
+    <text>Backup Dipole Power Supply</text>
+    <x>11</x>
+    <width>344</width>
+    <height>33</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <actions>
     </actions>

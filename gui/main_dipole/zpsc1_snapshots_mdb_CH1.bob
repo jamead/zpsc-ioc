@@ -1,0 +1,4249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-02-06 15:33:56 by mead-->
+<display version="2.0.0">
+  <name>$(CHAN):$(PriSys)</name>
+  <width>1120</width>
+  <height>980</height>
+  <background_color>
+    <color red="200" green="215" blue="255">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_step_x>6</grid_step_x>
+  <grid_step_y>6</grid_step_y>
+  <widget type="led" version="2.0.0">
+    <name>LED_36</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B1</pv_name>
+    <x>2353</x>
+    <y>999</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_37</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B0</pv_name>
+    <x>2353</x>
+    <y>1019</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_38</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B2</pv_name>
+    <x>2353</x>
+    <y>979</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_39</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B4</pv_name>
+    <x>2353</x>
+    <y>939</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_40</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B3</pv_name>
+    <x>2353</x>
+    <y>959</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_41</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B5</pv_name>
+    <x>2353</x>
+    <y>919</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_42</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B7</pv_name>
+    <x>2353</x>
+    <y>879</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_43</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B6</pv_name>
+    <x>2353</x>
+    <y>899</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_44</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B8</pv_name>
+    <x>2353</x>
+    <y>859</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_45</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.BA</pv_name>
+    <x>2353</x>
+    <y>819</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_46</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.B9</pv_name>
+    <x>2353</x>
+    <y>839</y>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_47</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I.BB</pv_name>
+    <x>2353</x>
+    <y>799</y>
+  </widget>
+  <widget type="textentry" version="3.0.0">
+    <name>Text Update_150</name>
+    <pv_name>$(PriSys){$(PSC)}$(CHAN):FaultsLive-I</pv_name>
+    <x>2336</x>
+    <y>1050</y>
+    <width>53</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color red="255" green="255" blue="255">
+      </color>
+    </background_color>
+    <format>4</format>
+    <precision>0</precision>
+    <show_units>false</show_units>
+    <horizontal_alignment>1</horizontal_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Text Input_1</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <text>${CHAN}</text>
+    <x>789</x>
+    <y>32</y>
+    <width>77</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="OpTitleBG" red="175" green="238" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Text Input_2</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <text>${PSC}</text>
+    <x>711</x>
+    <y>32</y>
+    <width>77</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="OpTitleBG" red="175" green="238" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Text Input</name>
+    <macros>
+      <pv_name></pv_name>
+    </macros>
+    <text>${PriSys}</text>
+    <x>627</x>
+    <y>32</y>
+    <width>77</width>
+    <font>
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="OpTitleBG" red="175" green="238" blue="175">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs_1</name>
+    <tabs>
+      <tab>
+        <name>User</name>
+        <children>
+          <widget type="led" version="2.0.0">
+            <name>LED_18</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):UsrTrigActive-I</pv_name>
+            <x>850</x>
+            <y>6</y>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_72</name>
+            <x>10</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DAC</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_73</name>
+            <x>525</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_74</name>
+            <x>10</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT2</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:DCCT2-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_75</name>
+            <x>525</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>PS Vout</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Volt-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_77</name>
+            <x>10</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Regulator</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Reg-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_78</name>
+            <x>525</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Spare</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Spare-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_247</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+            <x>424</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_248</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+            <x>517</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_1</name>
+            <text>X Min</text>
+            <x>451</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label</name>
+            <text>X Max</text>
+            <x>548</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_81</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):UsrTrigTime-I.VALA</pv_name>
+            <x>847</x>
+            <y>28</y>
+            <width>174</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>6</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_2</name>
+            <text>Time Stamp</text>
+            <x>747</x>
+            <y>28</y>
+            <width>91</width>
+            <height>18</height>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_76</name>
+            <x>10</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>iGND</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>mA</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_86</name>
+            <x>525</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):USR:Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_7</name>
+            <text>Active</text>
+            <x>782</x>
+            <y>7</y>
+            <width>51</width>
+            <height>18</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Fault</name>
+        <children>
+          <widget type="led" version="2.0.0">
+            <name>LED_19</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):FltTrigActive-I</pv_name>
+            <x>850</x>
+            <y>6</y>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_87</name>
+            <x>10</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DAC</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_88</name>
+            <x>525</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_89</name>
+            <x>10</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT2</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:DCCT2-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_90</name>
+            <x>525</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>PS Vout</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:Volt-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_91</name>
+            <x>10</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Regulator</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:Reg-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_92</name>
+            <x>525</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Spare</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:Spare-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_249</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+            <x>424</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_250</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+            <x>517</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_3</name>
+            <text>X Min</text>
+            <x>451</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_4</name>
+            <text>X Max</text>
+            <x>548</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_251</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):FltTrigTime-I.VALA</pv_name>
+            <x>847</x>
+            <y>28</y>
+            <width>174</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>6</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_5</name>
+            <text>Time Stamp</text>
+            <x>747</x>
+            <y>28</y>
+            <width>91</width>
+            <height>18</height>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_93</name>
+            <x>10</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>iGND</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>mA</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_94</name>
+            <x>525</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):FLT:Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_8</name>
+            <text>Active</text>
+            <x>782</x>
+            <y>7</y>
+            <width>51</width>
+            <height>18</height>
+          </widget>
+          <widget type="text-symbol" version="2.0.0">
+            <name>Text Symbol_1</name>
+            <x>972</x>
+            <y>444</y>
+            <width>1</width>
+            <height>1</height>
+          </widget>
+          <widget type="text-symbol" version="2.0.0">
+            <name>Text Symbol</name>
+            <x>934</x>
+            <y>366</y>
+            <width>1</width>
+            <height>1</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Error (Glitch)</name>
+        <children>
+          <widget type="led" version="2.0.0">
+            <name>LED_21</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):ErrTrigActive-I</pv_name>
+            <x>850</x>
+            <y>6</y>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_95</name>
+            <x>10</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DAC</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_96</name>
+            <x>525</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_97</name>
+            <x>10</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT2</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:DCCT2-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_98</name>
+            <x>525</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>PS Vout</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:Volt-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_99</name>
+            <x>10</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Regulator</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:Reg-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_100</name>
+            <x>525</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Spare</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:Spare-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_252</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+            <x>424</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_253</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+            <x>517</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_9</name>
+            <text>X Min</text>
+            <x>451</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_10</name>
+            <text>X Max</text>
+            <x>548</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_254</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):ErrTrigTime-I.VALA</pv_name>
+            <x>847</x>
+            <y>28</y>
+            <width>174</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>6</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_11</name>
+            <text>Time Stamp</text>
+            <x>747</x>
+            <y>28</y>
+            <width>91</width>
+            <height>18</height>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_101</name>
+            <x>10</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>iGND</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>mA</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_102</name>
+            <x>525</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):ERR:Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_12</name>
+            <text>Active</text>
+            <x>782</x>
+            <y>7</y>
+            <width>51</width>
+            <height>18</height>
+          </widget>
+          <widget type="text-symbol" version="2.0.0">
+            <name>Text Symbol_2</name>
+            <x>972</x>
+            <y>444</y>
+            <width>1</width>
+            <height>1</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>EVR (PostMortem)</name>
+        <children>
+          <widget type="led" version="2.0.0">
+            <name>LED_22</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):EvrTrigActive-I</pv_name>
+            <x>850</x>
+            <y>6</y>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_103</name>
+            <x>10</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DAC</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_104</name>
+            <x>525</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_105</name>
+            <x>10</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT2</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:DCCT2-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_106</name>
+            <x>525</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>PS Vout</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:Volt-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_107</name>
+            <x>10</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Regulator</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:Reg-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_108</name>
+            <x>525</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Spare</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:Spare-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_255</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+            <x>424</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_256</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+            <x>517</x>
+            <y>33</y>
+            <width>90</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_13</name>
+            <text>X Min</text>
+            <x>451</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_14</name>
+            <text>X Max</text>
+            <x>548</x>
+            <y>16</y>
+            <width>42</width>
+            <height>18</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_257</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):EvrTrigTime-I.VALA</pv_name>
+            <x>847</x>
+            <y>28</y>
+            <width>174</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>6</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_15</name>
+            <text>Time Stamp</text>
+            <x>747</x>
+            <y>28</y>
+            <width>91</width>
+            <height>18</height>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_109</name>
+            <x>10</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>iGND</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>mA</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_110</name>
+            <x>525</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.minimum', PVUtil.getDouble(pvs[0])-1)
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[1])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmin</pv_name>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):SS:WFM-Xmax</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):EVR:Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_16</name>
+            <text>Active</text>
+            <x>782</x>
+            <y>7</y>
+            <width>51</width>
+            <height>18</height>
+          </widget>
+          <widget type="text-symbol" version="2.0.0">
+            <name>Text Symbol_3</name>
+            <x>972</x>
+            <y>444</y>
+            <width>1</width>
+            <height>1</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Injection (Shot-to-Shot)</name>
+        <children>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_79</name>
+            <x>10</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DAC</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DAC-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_80</name>
+            <x>10</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>iGnd</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>mA</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_84</name>
+            <x>525</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>PS Vout</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Volt-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_83</name>
+            <x>525</x>
+            <y>665</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Spare</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Spare-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_116</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+            <x>418</x>
+            <y>11</y>
+            <width>80</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>1</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_60</name>
+            <text>PostTrigPts</text>
+            <x>304</x>
+            <y>11</y>
+            <width>106</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_71</name>
+            <x>525</x>
+            <y>65</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT1</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>10000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT1-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_85</name>
+            <x>10</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>DCCT2</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:DCCT2-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_82</name>
+            <x>525</x>
+            <y>265</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Error</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Volts</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Error-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="xyplot" version="3.0.0">
+            <name>XY Graph_81</name>
+            <x>10</x>
+            <y>465</y>
+            <width>500</width>
+            <height>200</height>
+            <title>Reg</title>
+            <title_font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </title_font>
+            <show_legend>false</show_legend>
+            <actions>
+            </actions>
+            <scripts>
+              <script file="EmbeddedPy">
+                <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+#print 'Hello'
+widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
+                <pv_name>$(PriSys){$(PSC)}$(CHAN):PostTrigNumPts-SP</pv_name>
+              </script>
+            </scripts>
+            <x_axis>
+              <title></title>
+              <autoscale>false</autoscale>
+              <log_scale>false</log_scale>
+              <minimum>0.0</minimum>
+              <maximum>100000.0</maximum>
+              <show_grid>true</show_grid>
+              <title_font>
+                <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                </font>
+              </title_font>
+              <scale_font>
+                <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                </font>
+              </scale_font>
+              <visible>true</visible>
+            </x_axis>
+            <y_axes>
+              <y_axis>
+                <title>Amps</title>
+                <autoscale>true</autoscale>
+                <log_scale>false</log_scale>
+                <minimum>0.0</minimum>
+                <maximum>100000.0</maximum>
+                <show_grid>true</show_grid>
+                <title_font>
+                  <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+                  </font>
+                </title_font>
+                <scale_font>
+                  <font name="Default" family="Liberation Sans" style="REGULAR" size="14.0">
+                  </font>
+                </scale_font>
+                <on_right>false</on_right>
+                <visible>true</visible>
+                <color>
+                  <color name="Text" red="0" green="0" blue="0">
+                  </color>
+                </color>
+              </y_axis>
+            </y_axes>
+            <traces>
+              <trace>
+                <name></name>
+                <x_pv></x_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Gnd-Wfm</y_pv>
+                <err_pv></err_pv>
+                <axis>0</axis>
+                <trace_type>1</trace_type>
+                <color>
+                  <color red="21" green="21" blue="196">
+                  </color>
+                </color>
+                <line_width>1</line_width>
+                <line_style>0</line_style>
+                <point_type>0</point_type>
+                <point_size>4</point_size>
+                <visible>true</visible>
+              </trace>
+            </traces>
+          </widget>
+          <widget type="led" version="2.0.0">
+            <name>LED_23</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):InjTrigActive-I</pv_name>
+            <x>850</x>
+            <y>6</y>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Text Update_258</name>
+            <pv_name>$(PriSys){$(PSC)}$(CHAN):InjTrigTime-I.VALA</pv_name>
+            <x>847</x>
+            <y>28</y>
+            <width>174</width>
+            <font>
+              <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+              </font>
+            </font>
+            <background_color>
+              <color red="255" green="255" blue="255">
+              </color>
+            </background_color>
+            <format>6</format>
+            <precision>0</precision>
+            <show_units>false</show_units>
+            <horizontal_alignment>1</horizontal_alignment>
+            <actions>
+            </actions>
+            <border_color>
+              <color red="0" green="128" blue="255">
+              </color>
+            </border_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_17</name>
+            <text>Time Stamp</text>
+            <x>747</x>
+            <y>28</y>
+            <width>91</width>
+            <height>18</height>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Label_18</name>
+            <text>Active</text>
+            <x>782</x>
+            <y>7</y>
+            <width>51</width>
+            <height>18</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>30</x>
+    <y>42</y>
+    <width>1050</width>
+    <height>915</height>
+    <active_tab>4</active_tab>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_47</name>
+    <text>PSC SnapShots</text>
+    <x>138</x>
+    <y>5</y>
+    <width>180</width>
+    <height>37</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>
