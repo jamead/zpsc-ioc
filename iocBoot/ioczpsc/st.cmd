@@ -8,13 +8,9 @@
 epicsEnvSet("IOCNAME", "lab")
 
 # PSC IP address
-epicsEnvSet("PSC1_IP", "10.0.142.115"); 
-#epicsEnvSet("PSC1_IP", "10.69.26.30"); 
-epicsEnvSet("PSC2_IP", "10.69.26.31"); 
-epicsEnvSet("PSC3_IP", "10.69.26.32"); 
-epicsEnvSet("PSC4_IP", "10.69.26.33"); 
-epicsEnvSet("PSC5_IP", "10.69.26.34"); 
-epicsEnvSet("PSC6_IP", "10.69.26.35"); 
+# PSC IP address
+epicsEnvSet("PSC1_IP", "192.168.0.11"); 
+epicsEnvSet("PSC2_IP", "192.168.0.12"); 
 
 
 epicsEnvSet("BLEN",100000);        # Snapshot DMA Length
@@ -233,38 +229,14 @@ cd "${TOP}/iocBoot/${IOC}"
 iocInit
 
 ## Start any sequence programs
-#seq ch_fsm,"M0=lab{1},M1=Chan1"
-#seq ch_fsm,"M0=lab{1},M1=Chan2"
-#seq ch_fsm,"M0=lab{1},M1=Chan3"
-#seq ch_fsm,"M0=lab{1},M1=Chan4"
-
-#seq ch_fsm,"M0=lab{2},M1=Chan1"
-#seq ch_fsm,"M0=lab{2},M1=Chan2"
-#seq ch_fsm,"M0=lab{2},M1=Chan3"
-#seq ch_fsm,"M0=lab{2},M1=Chan4"
-
-#seq ch_fsm,"M0=lab{3},M1=Chan1"
-#seq ch_fsm,"M0=lab{3},M1=Chan2"
-#seq ch_fsm,"M0=lab{3},M1=Chan3"
-#seq ch_fsm,"M0=lab{3},M1=Chan4"
-
-#seq ch_fsm,"M0=lab{4},M1=Chan1"
-#seq ch_fsm,"M0=lab{4},M1=Chan2"
-#seq ch_fsm,"M0=lab{4},M1=Chan3"
-#seq ch_fsm,"M0=lab{4},M1=Chan4"
-
-#seq ch_fsm,"M0=lab{5},M1=Chan1"
-#seq ch_fsm,"M0=lab{5},M1=Chan2"
-#seq ch_fsm,"M0=lab{5},M1=Chan3"
-#seq ch_fsm,"M0=lab{5},M1=Chan4"
-
-#seq ch_fsm,"M0=lab{6},M1=Chan1"
-#seq ch_fsm,"M0=lab{6},M1=Chan2"
-#seq ch_fsm,"M0=lab{6},M1=Chan3"
-#seq ch_fsm,"M0=lab{6},M1=Chan4"
+seq ch_fsm,"M0=lab{1},M1=Chan1"
 
 
-
+dbpf lab{1}Chan1:FaultMask:B12-SP 0
+dbpf lab{2}Chan1:FaultMask:B12-SP 0
 epicsThreadSleep(1.0)
+dbpf lab{1}Chan1:FaultMask:B12-SP 1
+dbpf lab{2}Chan1:FaultMask:B12-SP 1
+
 
 
