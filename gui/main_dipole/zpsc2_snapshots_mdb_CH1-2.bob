@@ -4153,7 +4153,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
               <trace>
                 <name></name>
                 <x_pv></x_pv>
-                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Gnd-Wfm</y_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Reg-Wfm</y_pv>
                 <err_pv></err_pv>
                 <axis>0</axis>
                 <trace_type>1</trace_type>
@@ -4223,7 +4223,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <y>42</y>
     <width>1050</width>
     <height>915</height>
-    <active_tab>3</active_tab>
+    <active_tab>4</active_tab>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_47</name>

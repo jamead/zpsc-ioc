@@ -3543,7 +3543,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>Series Pass Vdrop</title>
+            <title>VAC-PhBC</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3627,7 +3627,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>465</y>
             <width>500</width>
             <height>200</height>
-            <title>Liquablade Vout</title>
+            <title>VAC-PhAB</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3711,7 +3711,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>-</title>
+            <title>VAC-PhAC</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3839,7 +3839,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>65</y>
             <width>500</width>
             <height>200</height>
-            <title>PS Vout</title>
+            <title>-</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -4007,7 +4007,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>265</y>
             <width>500</width>
             <height>200</height>
-            <title>Error</title>
+            <title>-</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -4091,7 +4091,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>465</y>
             <width>500</width>
             <height>200</height>
-            <title>Reg</title>
+            <title>-</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -4153,7 +4153,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
               <trace>
                 <name></name>
                 <x_pv></x_pv>
-                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Gnd-Wfm</y_pv>
+                <y_pv>$(PriSys){$(PSC)}$(CHAN):INJ:Reg-Wfm</y_pv>
                 <err_pv></err_pv>
                 <axis>0</axis>
                 <trace_type>1</trace_type>
@@ -4223,7 +4223,6 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
     <y>42</y>
     <width>1050</width>
     <height>915</height>
-    <active_tab>1</active_tab>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_47</name>
