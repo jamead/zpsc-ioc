@@ -2449,7 +2449,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_108</name>
-      <text>Power Supply Fault</text>
+      <text>Flt1-PS Fault</text>
       <x>157</x>
       <y>197</y>
       <width>191</width>
