@@ -3543,7 +3543,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>IAC PhaseB</title>
+            <title>IAC Ph-B</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3627,7 +3627,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>465</y>
             <width>500</width>
             <height>200</height>
-            <title>IAC Phase A</title>
+            <title>IAC Ph-A</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
@@ -3711,7 +3711,7 @@ widget.setPropertyValue('x_axis.maximum', PVUtil.getDouble(pvs[0])-1)]]></text>
             <y>665</y>
             <width>500</width>
             <height>200</height>
-            <title>IAC PhaseC</title>
+            <title>IAC Ph-C</title>
             <title_font>
               <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
               </font>
