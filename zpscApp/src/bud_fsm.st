@@ -1,7 +1,7 @@
-/* Sequencer to control the PSC IOC startup.*/
+/* Sequencer to control the PSC IOC startup Back-Up Dipole.*/
 
 
-program ch_fsm ("M0=lab{2}, M1=Chan1")
+program bud_fsm ("M0=lab{1}, M1=Chan1")
 
 
 
@@ -22,8 +22,8 @@ option -c;
 double fabs(double);
 
 
-short DAC; 
-assign DAC to "{M0}{M1}:DAC_SetPt-SP"; 
+double DAC; 
+assign DAC to "{M0}Chan1:DAC_SetPt-SP"; 
 monitor DAC; 
 
 double DAC_rdbck; 
@@ -34,9 +34,21 @@ double dac_adc_ofst;
 assign dac_adc_ofst to "{M0}{M1}:DAC-Offset-SP";  
 monitor dac_adc_ofst; 
 
-short Park; 
-assign Park to "{M0}{M1}:DigOut_Park-SP";
-monitor Park;
+short ch1_Park; 
+assign ch1_Park to "{M0}Chan1:DigOut_Park-SP";
+monitor ch1_Park;
+
+short ch2_Park; 
+assign ch2_Park to "{M0}Chan2:DigOut_Park-SP";
+monitor ch2_Park;
+
+short ch3_Park; 
+assign ch3_Park to "{M0}Chan3:DigOut_Park-SP";
+monitor ch3_Park;
+
+short ch4_Park; 
+assign ch4_Park to "{M0}Chan3:DigOut_Park-SP";
+monitor ch4_Park;
 
 /*Will need to be updated for channel to channel unipolar/bipolar operation */
 short Polarity; 
@@ -67,8 +79,8 @@ short ps_on_sts_uni;
 assign ps_on_sts_uni to "{M0}{M1}:DigIn-I.B1"; 
 monitor ps_on_sts_uni; 
 
-short on1_cmd; 
-assign on1_cmd to "{M0}{M1}:DigOut_ON1-SP"; 
+short ch1_on1_cmd; 
+assign ch1_on1_cmd to "{M0}Chan1:DigOut_ON1-SP"; 
 
 short ch1_en_cmd; 
 assign ch1_en_cmd to "{M0}Chan1:DigOut_ON2-SP";
@@ -180,10 +192,16 @@ ss OFF_ON_FSM {
     	  pvPut(DAC); 
           ps_on_off_sts = 0;
           pvPut(ps_on_off_sts);
-          Park = 1;
-          pvPut(Park);
-    	  on1_cmd = 0; 
-	  pvPut(on1_cmd);  
+          ch1_Park = 1;
+          pvPut(ch1_Park);
+          ch2_Park = 1;
+          pvPut(ch2_Park);
+          ch3_Park = 1;
+          pvPut(ch3_Park);
+          //ch4_Park = 1;
+          //pvPut(ch4_Park);
+    	  ch1_on1_cmd = 0; 
+	  pvPut(ch1_on1_cmd);  
           ch1_en_cmd = 1; 
           pvPut(ch1_en_cmd);  
           ch2_en_cmd = 1; 
@@ -263,8 +281,14 @@ ss OFF_ON_FSM {
        	    	pvPut(dac_adc_ofst);       	    	
        	    } state READBACK_DCCT1_ADC_OFFSET
         when(ps_on_off == 1) {
-		Park = 1; 
-		pvPut(Park); 
+		ch1_Park = 1; 
+		pvPut(ch1_Park); 
+		ch2_Park = 1; 
+		pvPut(ch2_Park); 
+		ch3_Park = 1; 
+		pvPut(ch3_Park); 
+		//ch4_Park = 1; 
+		//pvPut(ch4_Park); 
 		DAC = 0.000; 
 		pvPut(DAC); 
 		ps_on_off_sts = 0;
@@ -342,48 +366,42 @@ ss OFF_ON_FSM {
 	}	
     	state POWER_ON {
     		when(delay(2)){
-    	   		on1_cmd = 1; 
-	   		pvPut(on1_cmd); 
+    	   		ch1_on1_cmd = 1; 
+	   		pvPut(ch1_on1_cmd); 
 	   		sprintf(Chan_seq_messages, "Powering ON");
 	   		pvPut(Chan_seq_messages); 
-    		} state PARK_OFF
+    		} state PARK_OFF1
     	}		
-	state PARK_OFF {
-		when (delay(8)) {
-			sprintf(Chan_seq_messages, "Park OFF");
+	state PARK_OFF1 {
+		when (delay(3)) {
+			sprintf(Chan_seq_messages, "Park OFF 3,2");
 			pvPut(Chan_seq_messages); 
-			Park = 0; 
-			pvPut(Park); 						
-		} state CHECK_TYPE 
+			ch2_Park = 0; 
+			pvPut(ch2_Park); 
+			ch3_Park = 0; 
+			pvPut(ch3_Park); 
+		} state SMALL_SETPOINT 
 	}
-        state CHECK_TYPE {
-        	when(Polarity == 0){
-        	} state DONE_CHECK_BIPOLAR
-        	when(Polarity == 1){
-        	} state DONE_CHECK_UNIPOLAR
-        }
-	state DONE_CHECK_BIPOLAR{
-		when (ps_on_sts_bip == 0) {	
-			ps_on_off_sts = 0;	
-			pvPut(ps_on_off_sts); 				
-		} state RETRY_ON
-		when (ps_on_sts_bip == 1) {				
-		} state DONE
+	state SMALL_SETPOINT{
+		when (delay(1)) {
+			DAC = 0.1; 
+			pvPut(DAC); 
+		} state PARK_OFF2
 	}
-	state DONE_CHECK_UNIPOLAR{
-		when (ps_on_sts_uni == 0) {	
-			ps_on_off_sts = 0;	
-			pvPut(ps_on_off_sts); 				
-		} state RETRY_ON
-		when (ps_on_sts_uni == 1) {				
+	state PARK_OFF2{
+		when (delay(2)){
+			sprintf(Chan_seq_messages, "Park OFF 1");
+			pvPut(Chan_seq_messages);
+			ch1_Park = 0; 
+			pvPut(ch1_Park); 
 		} state DONE
 	}
 	state RETRY_ON {
 		when (ps_on_off==0) {
 			ps_on_off_sts = 2; 
 			pvPut(ps_on_off_sts); 
-			on1_cmd = 0; 
-			pvPut(on1_cmd); 
+			ch1_on1_cmd = 0; 
+			pvPut(ch1_on1_cmd); 
 			sprintf(Chan_seq_messages, "Faulted..Try Again");
         		pvPut(Chan_seq_messages);
         	    } state RETRY_IDLE
@@ -392,8 +410,8 @@ ss OFF_ON_FSM {
         	when (ps_on_off==1) {
         		ps_on_off_sts = 2; 
 			pvPut(ps_on_off_sts);
-			on1_cmd = 0; 
-			pvPut(on1_cmd); 
+			ch1_on1_cmd = 0; 
+			pvPut(ch1_on1_cmd); 
         		sprintf(Chan_seq_messages, "Faulted..Try Again");
         		pvPut(Chan_seq_messages);
         	    } state INIT_1 
@@ -415,6 +433,7 @@ ss OFF_ON_FSM {
         	   	ps_on_off_sts = 0;
         	   	pvPut(ps_on_off_sts); 
 		} state SET_DAC_TO_ZERO_OFF
+
 		when(ps_on_off==0) {
         	   	ps_on_off_sts = 1;
         	   	pvPut(ps_on_off_sts); 
@@ -426,7 +445,6 @@ ss OFF_ON_FSM {
 		when(sum_fault == 0){
 		} state HALT2
 		when(sum_fault > 0) {
-			//from_faulted_state = 1; 
 			ps_on_off_sts = 2; 
 			pvPut(ps_on_off_sts); 
 			sprintf(Chan_seq_messages, "Faulted..Try Again"); 
@@ -436,21 +454,37 @@ ss OFF_ON_FSM {
     	state HALT2 {
     		when(delay(0.2)) {
     		} state READY
-    	}
+    	} 
 	state SET_DAC_TO_ZERO_OFF {
 		when ((DAC_rdbck < 0.05) && (DAC_rdbck > -0.05)) {
 			sprintf(Chan_seq_messages, "Turning OFF");
 			pvPut(Chan_seq_messages);  						
-		} state POWER_OFF
+		} state POWER_OFF1
 	}
-	state POWER_OFF {
-		when (delay(5)) {
-			sprintf(Chan_seq_messages, "Turning OFF");
+	state POWER_OFF1 {
+		when (delay(2)) {
+			sprintf(Chan_seq_messages, "Park 1");
+			pvPut(Chan_seq_messages); 	
+			ch1_Park = 1; 
+			pvPut(ch1_Park); 					
+		} state POWER_OFF2
+	}
+	state POWER_OFF2 {
+		when (delay(2)) {
+			sprintf(Chan_seq_messages, "Park 2,3");
 			pvPut(Chan_seq_messages); 
-			on1_cmd = 0; 
-			pvPut(on1_cmd); 	
-			Park = 1; 
-			pvPut(Park); 					
+			ch2_Park = 1; 
+			pvPut(ch2_Park); 
+			ch3_Park = 1; 
+			pvPut(ch3_Park); 
+		} state POWER_OFF3
+	}
+	state POWER_OFF3 {
+		when (delay(1)) {
+			sprintf(Chan_seq_messages, "Power OFF");
+			pvPut(Chan_seq_messages); 
+			ch1_on1_cmd = 0; 
+			pvPut(ch1_on1_cmd); 
 		} state COMPLETE
 	}
 	state COMPLETE {
@@ -627,7 +661,7 @@ ss OFF_ON_FSM {
 		} state CHECK_NEW_ERROR
 	}
 	state CHECK_NEW_ERROR {
-		when(timeout_count > 100) {
+		when(timeout_count > 50) {
 			pvPut(dac_ofst); 
 			timeout_count = 0; 
 			atzo_sts = 0; 
