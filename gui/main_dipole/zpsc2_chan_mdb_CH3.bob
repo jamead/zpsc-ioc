@@ -2451,20 +2451,6 @@ $(actions)</tooltip>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>Label_108</name>
-      <text>Flt1-AC Line Dip</text>
-      <x>157</x>
-      <y>197</y>
-      <width>191</width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_109</name>
-      <text>-</text>
-      <x>157</x>
-      <y>177</y>
-      <width>191</width>
-    </widget>
-    <widget type="label" version="2.0.0">
       <name>Label_110</name>
       <text>-</text>
       <x>157</x>
@@ -2645,7 +2631,7 @@ $(actions)</tooltip>
     <widget type="label" version="2.0.0">
       <name>Label_111</name>
       <text>-</text>
-      <x>142</x>
+      <x>157</x>
       <y>137</y>
       <width>165</width>
     </widget>
@@ -3754,5 +3740,19 @@ $(actions)</tooltip>
       <color red="0" green="128" blue="255">
       </color>
     </border_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_108</name>
+    <text>Flt2-AC Line Dip</text>
+    <x>169</x>
+    <y>622</y>
+    <width>191</width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_109</name>
+    <text>-</text>
+    <x>169</x>
+    <y>642</y>
+    <width>191</width>
   </widget>
 </display>
