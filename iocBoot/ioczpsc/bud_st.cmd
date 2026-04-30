@@ -233,6 +233,8 @@ iocInit
 #For Back-Up Dipole
 seq bud_fsm,"M0=lab{1},M1=Chan1"
 
+dbpf lab{1}Chan1:DAC_OpMode-SP 0
+
 #Initialization
 epicsThreadSleep(8.0)
 #Lab1 Channel 1

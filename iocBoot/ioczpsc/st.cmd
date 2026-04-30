@@ -238,11 +238,6 @@ seq ch_fsm,"M0=lab{1},M1=Chan3"
 seq ch_fsm,"M0=lab{1},M1=Chan4"
 
 
-dbpf lab{1}Chan1:FaultMask:B12-SP 0
-dbpf lab{2}Chan1:FaultMask:B12-SP 0
-epicsThreadSleep(1.0)
-dbpf lab{1}Chan1:FaultMask:B12-SP 1
-dbpf lab{2}Chan1:FaultMask:B12-SP 1
 
 
 
