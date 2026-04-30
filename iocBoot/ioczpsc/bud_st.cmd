@@ -257,12 +257,12 @@ dbpf lab{1}Chan2:FaultMask:B9-SP 0
 dbpf lab{1}Chan2:FaultMask:B8-SP 0
 dbpf lab{1}Chan2:FaultMask:B7-SP 1
 dbpf lab{1}Chan2:FaultMask:B6-SP 0
-dbpf lab{1}Chan2:FaultMask:B5-SP 1
-dbpf lab{1}Chan2:FaultMask:B4-SP 1
-dbpf lab{1}Chan2:FaultMask:B3-SP 1
+dbpf lab{1}Chan2:FaultMask:B5-SP 0
+dbpf lab{1}Chan2:FaultMask:B4-SP 0
+dbpf lab{1}Chan2:FaultMask:B3-SP 0
 dbpf lab{1}Chan2:FaultMask:B2-SP 0
 dbpf lab{1}Chan2:FaultMask:B1-SP 0
-dbpf lab{1}Chan2:FaultMask:B0-SP 1
+dbpf lab{1}Chan2:FaultMask:B0-SP 0
 #Lab1 Channel 3
 dbpf lab{1}Chan3:FaultMask:B12-SP 0
 dbpf lab{1}Chan3:FaultMask:B11-SP 0
@@ -271,12 +271,12 @@ dbpf lab{1}Chan3:FaultMask:B9-SP 0
 dbpf lab{1}Chan3:FaultMask:B8-SP 0
 dbpf lab{1}Chan3:FaultMask:B7-SP 1
 dbpf lab{1}Chan3:FaultMask:B6-SP 0
-dbpf lab{1}Chan3:FaultMask:B5-SP 1
-dbpf lab{1}Chan3:FaultMask:B4-SP 1
-dbpf lab{1}Chan3:FaultMask:B3-SP 1
+dbpf lab{1}Chan3:FaultMask:B5-SP 0
+dbpf lab{1}Chan3:FaultMask:B4-SP 0
+dbpf lab{1}Chan3:FaultMask:B3-SP 0
 dbpf lab{1}Chan3:FaultMask:B2-SP 0
 dbpf lab{1}Chan3:FaultMask:B1-SP 0
-dbpf lab{1}Chan3:FaultMask:B0-SP 1
+dbpf lab{1}Chan3:FaultMask:B0-SP 0
 #Lab1 Channel 4
 dbpf lab{1}Chan4:FaultMask:B12-SP 0
 dbpf lab{1}Chan4:FaultMask:B11-SP 0
@@ -285,12 +285,12 @@ dbpf lab{1}Chan4:FaultMask:B9-SP 0
 dbpf lab{1}Chan4:FaultMask:B8-SP 0
 dbpf lab{1}Chan4:FaultMask:B7-SP 1
 dbpf lab{1}Chan4:FaultMask:B6-SP 0
-dbpf lab{1}Chan4:FaultMask:B5-SP 1
-dbpf lab{1}Chan4:FaultMask:B4-SP 1
-dbpf lab{1}Chan4:FaultMask:B3-SP 1
+dbpf lab{1}Chan4:FaultMask:B5-SP 0
+dbpf lab{1}Chan4:FaultMask:B4-SP 0
+dbpf lab{1}Chan4:FaultMask:B3-SP 0
 dbpf lab{1}Chan4:FaultMask:B2-SP 0
 dbpf lab{1}Chan4:FaultMask:B1-SP 0
-dbpf lab{1}Chan4:FaultMask:B0-SP 1
+dbpf lab{1}Chan4:FaultMask:B0-SP 0
 
 #Lab2 Channel 1
 dbpf lab{2}Chan1:FaultMask:B12-SP 0
@@ -298,7 +298,7 @@ dbpf lab{2}Chan1:FaultMask:B11-SP 0
 dbpf lab{2}Chan1:FaultMask:B10-SP 0
 dbpf lab{2}Chan1:FaultMask:B9-SP 0
 dbpf lab{2}Chan1:FaultMask:B8-SP 0
-dbpf lab{2}Chan1:FaultMask:B7-SP 1
+dbpf lab{2}Chan1:FaultMask:B7-SP 0
 dbpf lab{2}Chan1:FaultMask:B6-SP 0
 dbpf lab{2}Chan1:FaultMask:B5-SP 0
 dbpf lab{2}Chan1:FaultMask:B4-SP 0
@@ -313,7 +313,7 @@ dbpf lab{2}Chan2:FaultMask:B11-SP 0
 dbpf lab{2}Chan2:FaultMask:B10-SP 0
 dbpf lab{2}Chan2:FaultMask:B9-SP 0
 dbpf lab{2}Chan2:FaultMask:B8-SP 0
-dbpf lab{2}Chan2:FaultMask:B7-SP 1
+dbpf lab{2}Chan2:FaultMask:B7-SP 0
 dbpf lab{2}Chan2:FaultMask:B6-SP 0
 dbpf lab{2}Chan2:FaultMask:B5-SP 0
 dbpf lab{2}Chan2:FaultMask:B4-SP 0
@@ -328,7 +328,7 @@ dbpf lab{2}Chan3:FaultMask:B11-SP 0
 dbpf lab{2}Chan3:FaultMask:B10-SP 0
 dbpf lab{2}Chan3:FaultMask:B9-SP 0
 dbpf lab{2}Chan3:FaultMask:B8-SP 0
-dbpf lab{2}Chan3:FaultMask:B7-SP 1
+dbpf lab{2}Chan3:FaultMask:B7-SP 0
 dbpf lab{2}Chan3:FaultMask:B6-SP 0
 dbpf lab{2}Chan3:FaultMask:B5-SP 0
 dbpf lab{2}Chan3:FaultMask:B4-SP 0
@@ -343,7 +343,7 @@ dbpf lab{2}Chan4:FaultMask:B11-SP 0
 dbpf lab{2}Chan4:FaultMask:B10-SP 0
 dbpf lab{2}Chan4:FaultMask:B9-SP 0
 dbpf lab{2}Chan4:FaultMask:B8-SP 0
-dbpf lab{2}Chan4:FaultMask:B7-SP 1
+dbpf lab{2}Chan4:FaultMask:B7-SP 0
 dbpf lab{2}Chan4:FaultMask:B6-SP 0
 dbpf lab{2}Chan4:FaultMask:B5-SP 0
 dbpf lab{2}Chan4:FaultMask:B4-SP 0
