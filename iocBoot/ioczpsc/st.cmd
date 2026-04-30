@@ -233,6 +233,9 @@ iocInit
 
 ## Start any sequence programs
 seq ch_fsm,"M0=lab{1},M1=Chan1"
+seq ch_fsm,"M0=lab{1},M1=Chan2"
+seq ch_fsm,"M0=lab{1},M1=Chan3"
+seq ch_fsm,"M0=lab{1},M1=Chan4"
 
 
 dbpf lab{1}Chan1:FaultMask:B12-SP 0
