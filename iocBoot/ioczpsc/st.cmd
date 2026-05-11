@@ -237,6 +237,26 @@ seq ch_fsm,"M0=lab{1},M1=Chan2"
 seq ch_fsm,"M0=lab{1},M1=Chan3"
 seq ch_fsm,"M0=lab{1},M1=Chan4"
 
+seq ch_fsm,"M0=lab{2},M1=Chan1"
+seq ch_fsm,"M0=lab{2},M1=Chan2"
+seq ch_fsm,"M0=lab{2},M1=Chan3"
+seq ch_fsm,"M0=lab{2},M1=Chan4"
+
+seq ch_fsm,"M0=lab{3},M1=Chan1"
+seq ch_fsm,"M0=lab{3},M1=Chan2"
+seq ch_fsm,"M0=lab{3},M1=Chan3"
+seq ch_fsm,"M0=lab{3},M1=Chan4"
+
+seq ch_fsm,"M0=lab{4},M1=Chan1"
+seq ch_fsm,"M0=lab{4},M1=Chan2"
+seq ch_fsm,"M0=lab{4},M1=Chan3"
+seq ch_fsm,"M0=lab{4},M1=Chan4"
+
+seq ch_fsm,"M0=lab{5},M1=Chan1"
+seq ch_fsm,"M0=lab{5},M1=Chan2"
+seq ch_fsm,"M0=lab{5},M1=Chan3"
+seq ch_fsm,"M0=lab{5},M1=Chan4"
+
 
 
 

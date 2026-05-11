@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Saved on 2026-02-05 11:46:41 by mead-->
+<!--Saved on 2026-05-11 12:58:33 by pstester-->
 <display version="2.0.0">
   <name>PSC Top</name>
   <width>850</width>
@@ -41,7 +41,7 @@
     <name>Action Button_41</name>
     <actions>
       <action type="open_display">
-        <file>zpsc_global_4chan_bipolar.opi</file>
+        <file>zpsc_global.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>2</PSC>
@@ -66,7 +66,7 @@
     <name>Action Button_42</name>
     <actions>
       <action type="open_display">
-        <file>zpsc_global_4chan_bipolar.opi</file>
+        <file>zpsc_global.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>3</PSC>
@@ -91,7 +91,7 @@
     <name>Action Button_43</name>
     <actions>
       <action type="open_display">
-        <file>zpsc_global_2chan_unipolar.opi</file>
+        <file>zpsc_global.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>4</PSC>
@@ -576,7 +576,7 @@
     <name>Action Button_44</name>
     <actions>
       <action type="open_display">
-        <file>zpsc_global_2chan_unipolar.opi</file>
+        <file>zpsc_global.bob</file>
         <macros>
           <PriSys>lab</PriSys>
           <PSC>5</PSC>
