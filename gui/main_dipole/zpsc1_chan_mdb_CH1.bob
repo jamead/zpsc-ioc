@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-15 15:05:35 by mead-->
 <display version="2.0.0">
   <name>$(CHAN):$(PriSys)</name>
   <width>1700</width>
@@ -164,6 +165,7 @@ $(actions)</tooltip>
         </color>
       </off_color>
       <on_label></on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_20</name>
@@ -190,6 +192,10 @@ $(actions)</tooltip>
         <color name="Text" red="0" green="0" blue="0">
         </color>
       </off_color>
+      <on_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </on_color>
       <foreground_color>
         <color red="192" green="192" blue="192">
         </color>
@@ -214,7 +220,7 @@ $(actions)</tooltip>
         </color>
       </off_color>
       <on_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
+        <color name="ON" red="0" green="255" blue="0">
         </color>
       </on_color>
       <foreground_color>
@@ -288,7 +294,7 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_240</name>
-      <text>PS ON</text>
+      <text>PS Fault</text>
       <x>419</x>
       <y>11</y>
       <width>78</width>
@@ -303,10 +309,10 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_241</name>
-      <text>PS Fault</text>
+      <text>PS ON</text>
       <x>506</x>
       <y>11</y>
-      <width>61</width>
+      <width>52</width>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <actions>
@@ -2449,21 +2455,21 @@ $(actions)</tooltip>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_108</name>
-      <text>Flt1-PS Fault</text>
+      <text>Fault 1: </text>
       <x>157</x>
       <y>197</y>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_109</name>
-      <text>Flt2-AC Line Dip</text>
+      <text>Fault 2: </text>
       <x>157</x>
       <y>177</y>
       <width>191</width>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_110</name>
-      <text>-</text>
+      <text>Fault 3:</text>
       <x>157</x>
       <y>157</y>
       <width>191</width>
@@ -3139,14 +3145,14 @@ $(actions)</tooltip>
       <name>Action Button_26</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc_ramptable.bob</file>
+          <file>../zpsc_ramptable.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>$(CHAN)</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ramp Table Settings</text>
@@ -3165,14 +3171,14 @@ $(actions)</tooltip>
       <name>Action Button_27</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_qspi_mdb_CH1.bob</file>
+          <file>../zpsc_qspi.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>$(CHAN)</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>NonVolatile Settings</text>
@@ -3593,14 +3599,14 @@ $(actions)</tooltip>
       <name>Action Button_28</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_snapshots_mdb_CH1.bob</file>
+          <file>../zpsc_snapshots.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>$(CHAN)</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>SnapShot Plots</text>
@@ -3735,8 +3741,10 @@ $(actions)</tooltip>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label_277</name>
-    <text>Backup Dipole Power Supply</text>
-    <width>344</width>
+    <text>zPSC Channel : Unipolar</text>
+    <x>174</x>
+    <y>4</y>
+    <width>273</width>
     <height>33</height>
     <font>
       <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
@@ -3833,7 +3841,7 @@ $(actions)</tooltip>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_9</name>
     <pv_name>$(PriSys){$(PSC)}Chan1:DigOut_ON1-SP</pv_name>
-    <x>579</x>
+    <x>56</x>
     <y>11</y>
     <width>50</width>
     <height>21</height>
@@ -3847,7 +3855,8 @@ $(actions)</tooltip>
   <widget type="label" version="2.0.0">
     <name>Label_244</name>
     <text>CH1 ON1</text>
-    <x>579</x>
+    <x>110</x>
+    <y>11</y>
     <width>63</width>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>

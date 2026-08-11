@@ -1,0 +1,327 @@
+
+
+
+record(ai, "$(P){$(NO)}:Frame:Start-I") {
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 0")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:1-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 4")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:2-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 8")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:3-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 12")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:4-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 16")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:5-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 20")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:6-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 24")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:7-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 28")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:8-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 32")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:9-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 36")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:10-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 40")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:11-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 44")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Hall:Sensor:12-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 48")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS1:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 72")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS1:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 76")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS2:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 80")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS2:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 84")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS3:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 88")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS3:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 92")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS4:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 96")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS4:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 100")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS5:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 104")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS5:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 108")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS6:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 112")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS6:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 116")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS7:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 120")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS7:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 124")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS8:V-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 128")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS8:I-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 132")
+    field(SCAN,"I/O Intr")
+}
+
+
+
+
+
+record(ai,"$(P){$(NO)}:Delta:PS1:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 140")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS2:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 144")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS3:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 148")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS1:Fan1-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 152")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS1:Fan2-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 156")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS2:Fan1-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 160")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS2:Fan2-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 164")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS3:Fan1-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 168")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PS3:Fan2-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 172")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Heatsink1:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 176")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+record(ai,"$(P){$(NO)}:Heatsink2:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 180")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+record(ai,"$(P){$(NO)}:Heatsink3:Temp-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 184")
+    field(SCAN,"I/O Intr")
+  field(EGU,"C")
+}
+
+
+record(ai,"$(P){$(NO)}:Heatsink1:PWM-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 192")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Heatsink2:PWM-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 196")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Heatsink3:PWM-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 200")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Delta:PSMod:Status-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 208")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Fault:Status-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 212")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Serial:Number-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 216")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Firmware:Version-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 220")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Loop:Rate-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 224")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:UDPpkt:Counter-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 228")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Uptime-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 232")
+    field(SCAN,"I/O Intr")
+}
+
+record(ai,"$(P){$(NO)}:Frame:End-I"){
+    field(DTYP, "PSC Reg F32")
+    field(INP , "@PSC$(NO) 15 236")
+    field(SCAN,"I/O Intr")
+}
+
+

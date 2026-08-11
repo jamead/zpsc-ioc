@@ -13,6 +13,7 @@ DB += lstats.db
 DB += snapshots.db
 DB += status10hz.db
 DB += wfmstats.db
+DB += bpc.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add

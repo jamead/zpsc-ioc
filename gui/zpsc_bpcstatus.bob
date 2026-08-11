@@ -1,0 +1,3043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-08-11 11:37:45 by mead-->
+<display version="2.0.0">
+  <name>BPCstatus</name>
+  <width>920</width>
+  <height>680</height>
+  <background_color>
+    <color red="200" green="215" blue="255">
+    </color>
+  </background_color>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_74</name>
+    <x>611</x>
+    <y>58</y>
+    <width>300</width>
+    <height>607</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_73</name>
+    <x>308</x>
+    <y>58</y>
+    <width>300</width>
+    <height>607</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_72</name>
+    <x>5</x>
+    <y>58</y>
+    <width>300</width>
+    <height>607</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <transparent>true</transparent>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_104</name>
+    <text>Frame Start</text>
+    <x>45</x>
+    <y>64</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_92</name>
+    <pv_name>$(PriSys){$(PSC)}:Frame:Start-I</pv_name>
+    <x>199</x>
+    <y>64</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_108</name>
+    <text>Hall Sensor 1</text>
+    <x>45</x>
+    <y>94</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_94</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:1-I</pv_name>
+    <x>199</x>
+    <y>94</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_109</name>
+    <text>Hall Sensor 2</text>
+    <x>45</x>
+    <y>124</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_95</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:2-I</pv_name>
+    <x>199</x>
+    <y>124</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_110</name>
+    <text>Hall Sensor 3</text>
+    <x>45</x>
+    <y>154</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_96</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:3-I</pv_name>
+    <x>199</x>
+    <y>154</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_111</name>
+    <text>Hall Sensor 4</text>
+    <x>45</x>
+    <y>184</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_97</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:4-I</pv_name>
+    <x>199</x>
+    <y>184</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_112</name>
+    <text>Hall Sensor 5</text>
+    <x>45</x>
+    <y>214</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_98</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:5-I</pv_name>
+    <x>199</x>
+    <y>214</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_113</name>
+    <text>Hall Sensor 6</text>
+    <x>45</x>
+    <y>244</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_99</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:6-I</pv_name>
+    <x>199</x>
+    <y>244</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_114</name>
+    <text>Hall Sensor 7</text>
+    <x>45</x>
+    <y>274</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_100</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:7-I</pv_name>
+    <x>199</x>
+    <y>274</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_115</name>
+    <text>Hall Sensor 8</text>
+    <x>45</x>
+    <y>304</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_101</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:8-I</pv_name>
+    <x>199</x>
+    <y>304</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_116</name>
+    <text>Hall Sensor 9</text>
+    <x>45</x>
+    <y>334</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_102</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:9-I</pv_name>
+    <x>199</x>
+    <y>334</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_117</name>
+    <text>Hall Sensor 10</text>
+    <x>45</x>
+    <y>364</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_103</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:10-I</pv_name>
+    <x>199</x>
+    <y>364</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_118</name>
+    <text>Hall Sensor 11</text>
+    <x>45</x>
+    <y>394</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_104</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:11-I</pv_name>
+    <x>199</x>
+    <y>394</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_119</name>
+    <text>Hall Sensor 12</text>
+    <x>45</x>
+    <y>424</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_105</name>
+    <pv_name>$(PriSys){$(PSC)}:Hall:Sensor:12-I</pv_name>
+    <x>199</x>
+    <y>424</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_120</name>
+    <text>Delta PS1 V</text>
+    <x>45</x>
+    <y>604</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_106</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS1:V-I</pv_name>
+    <x>199</x>
+    <y>604</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_121</name>
+    <text>Delta PS1 I</text>
+    <x>45</x>
+    <y>634</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_107</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS1:I-I</pv_name>
+    <x>199</x>
+    <y>634</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_122</name>
+    <text>Delta PS2 V</text>
+    <x>348</x>
+    <y>64</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_108</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS2:V-I</pv_name>
+    <x>502</x>
+    <y>64</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_123</name>
+    <text>Delta PS2 I</text>
+    <x>348</x>
+    <y>94</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_109</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS2:I-I</pv_name>
+    <x>502</x>
+    <y>94</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_124</name>
+    <text>Delta PS3 V</text>
+    <x>348</x>
+    <y>124</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_110</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS3:V-I</pv_name>
+    <x>502</x>
+    <y>124</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_125</name>
+    <text>Delta PS3 I</text>
+    <x>348</x>
+    <y>154</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_111</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS3:I-I</pv_name>
+    <x>502</x>
+    <y>154</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_126</name>
+    <text>Delta PS4 V</text>
+    <x>348</x>
+    <y>184</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_112</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS4:V-I</pv_name>
+    <x>502</x>
+    <y>184</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_127</name>
+    <text>Delta PS4 I</text>
+    <x>348</x>
+    <y>214</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_113</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS4:I-I</pv_name>
+    <x>502</x>
+    <y>214</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_128</name>
+    <text>Delta PS5 V</text>
+    <x>348</x>
+    <y>244</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_114</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS5:V-I</pv_name>
+    <x>502</x>
+    <y>244</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_129</name>
+    <text>Delta PS5 I</text>
+    <x>348</x>
+    <y>274</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_115</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS5:I-I</pv_name>
+    <x>502</x>
+    <y>274</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_130</name>
+    <text>Delta PS6 V</text>
+    <x>348</x>
+    <y>304</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_116</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS6:V-I</pv_name>
+    <x>502</x>
+    <y>304</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_131</name>
+    <text>Delta PS6 I</text>
+    <x>348</x>
+    <y>334</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_117</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS6:I-I</pv_name>
+    <x>502</x>
+    <y>334</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_132</name>
+    <text>Delta PS7 V</text>
+    <x>348</x>
+    <y>364</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_118</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS7:V-I</pv_name>
+    <x>502</x>
+    <y>364</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_133</name>
+    <text>Delta PS7 I</text>
+    <x>348</x>
+    <y>394</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_119</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS7:I-I</pv_name>
+    <x>502</x>
+    <y>394</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_134</name>
+    <text>Delta PS8 V</text>
+    <x>348</x>
+    <y>424</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_120</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS8:V-I</pv_name>
+    <x>502</x>
+    <y>424</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_135</name>
+    <text>Delta PS8 I</text>
+    <x>348</x>
+    <y>454</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_121</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS8:I-I</pv_name>
+    <x>502</x>
+    <y>454</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_136</name>
+    <text>Frame End</text>
+    <x>651</x>
+    <y>634</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_122</name>
+    <pv_name>$(PriSys){$(PSC)}:Frame:End-I</pv_name>
+    <x>805</x>
+    <y>634</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_140</name>
+    <text>Delta PS1 Fan1</text>
+    <x>348</x>
+    <y>604</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_126</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS1:Fan1-I</pv_name>
+    <x>502</x>
+    <y>604</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_141</name>
+    <text>Delta PS1 Fan2</text>
+    <x>348</x>
+    <y>634</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_127</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS1:Fan2-I</pv_name>
+    <x>502</x>
+    <y>634</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_142</name>
+    <text>Delta PS2 Fan1</text>
+    <x>651</x>
+    <y>64</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_128</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS2:Fan1-I</pv_name>
+    <x>805</x>
+    <y>64</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_143</name>
+    <text>Delta PS2 Fan2</text>
+    <x>651</x>
+    <y>94</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_129</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS2:Fan2-I</pv_name>
+    <x>805</x>
+    <y>94</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_144</name>
+    <text>Delta PS3 Fan1</text>
+    <x>651</x>
+    <y>124</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_130</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS3:Fan1-I</pv_name>
+    <x>805</x>
+    <y>124</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_145</name>
+    <text>Delta PS3 Fan2</text>
+    <x>651</x>
+    <y>154</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_131</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS3:Fan2-I</pv_name>
+    <x>805</x>
+    <y>154</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_146</name>
+    <text>Heatsink 1 Temp</text>
+    <x>651</x>
+    <y>184</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_132</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink1:Temp-I</pv_name>
+    <x>805</x>
+    <y>184</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_147</name>
+    <text>Heatsink 2 Temp</text>
+    <x>651</x>
+    <y>214</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_133</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink2:Temp-I</pv_name>
+    <x>805</x>
+    <y>214</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_148</name>
+    <text>Heatsink 3 Temp</text>
+    <x>651</x>
+    <y>244</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_134</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink3:Temp-I</pv_name>
+    <x>805</x>
+    <y>244</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_149</name>
+    <text>Heatsink 1 PWM</text>
+    <x>651</x>
+    <y>304</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_135</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink1:PWM-I</pv_name>
+    <x>805</x>
+    <y>304</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_150</name>
+    <text>Heatsink 2 PWM</text>
+    <x>651</x>
+    <y>334</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_136</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink2:PWM-I</pv_name>
+    <x>805</x>
+    <y>334</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_151</name>
+    <text>Heatsink 3 PWM</text>
+    <x>651</x>
+    <y>364</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_137</name>
+    <pv_name>$(PriSys){$(PSC)}:Heatsink3:PWM-I</pv_name>
+    <x>805</x>
+    <y>364</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_152</name>
+    <text>Delta PS Mod Status</text>
+    <x>651</x>
+    <y>424</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_138</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PSMod:Status-I</pv_name>
+    <x>805</x>
+    <y>424</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_153</name>
+    <text>Fault Status</text>
+    <x>651</x>
+    <y>454</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_139</name>
+    <pv_name>$(PriSys){$(PSC)}:Fault:Status-I</pv_name>
+    <x>805</x>
+    <y>454</y>
+    <height>25</height>
+    <format>4</format>
+    <precision>8</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_154</name>
+    <text>Serial Number</text>
+    <x>651</x>
+    <y>484</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_140</name>
+    <pv_name>$(PriSys){$(PSC)}:Serial:Number-I</pv_name>
+    <x>805</x>
+    <y>484</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_155</name>
+    <text>Firmware Version</text>
+    <x>651</x>
+    <y>514</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_141</name>
+    <pv_name>$(PriSys){$(PSC)}:Firmware:Version-I</pv_name>
+    <x>805</x>
+    <y>514</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_156</name>
+    <text>Loop Rate</text>
+    <x>651</x>
+    <y>544</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_142</name>
+    <pv_name>$(PriSys){$(PSC)}:Loop:Rate-I</pv_name>
+    <x>805</x>
+    <y>544</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_157</name>
+    <text>UDP PKT Count</text>
+    <x>651</x>
+    <y>574</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_143</name>
+    <pv_name>$(PriSys){$(PSC)}:UDPpkt:Counter-I</pv_name>
+    <x>805</x>
+    <y>574</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_158</name>
+    <text>Uptime</text>
+    <x>651</x>
+    <y>604</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_144</name>
+    <pv_name>$(PriSys){$(PSC)}:Uptime-I</pv_name>
+    <x>805</x>
+    <y>604</y>
+    <height>25</height>
+    <precision>0</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_159</name>
+    <text>0</text>
+    <x>11</x>
+    <y>64</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_160</name>
+    <text>1</text>
+    <x>11</x>
+    <y>94</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_161</name>
+    <text>2</text>
+    <x>11</x>
+    <y>124</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_162</name>
+    <text>3</text>
+    <x>11</x>
+    <y>154</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_163</name>
+    <text>4</text>
+    <x>11</x>
+    <y>184</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_164</name>
+    <text>5</text>
+    <x>11</x>
+    <y>214</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_165</name>
+    <text>6</text>
+    <x>11</x>
+    <y>244</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_166</name>
+    <text>7</text>
+    <x>11</x>
+    <y>274</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_167</name>
+    <text>8</text>
+    <x>11</x>
+    <y>304</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_168</name>
+    <text>9</text>
+    <x>11</x>
+    <y>334</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_169</name>
+    <text>10</text>
+    <x>11</x>
+    <y>364</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_170</name>
+    <text>11</text>
+    <x>11</x>
+    <y>394</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_171</name>
+    <text>12</text>
+    <x>11</x>
+    <y>424</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_172</name>
+    <text>13</text>
+    <x>11</x>
+    <y>454</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_173</name>
+    <text>14</text>
+    <x>11</x>
+    <y>484</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_174</name>
+    <text>15</text>
+    <x>11</x>
+    <y>514</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_175</name>
+    <text>16</text>
+    <x>11</x>
+    <y>544</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_176</name>
+    <text>17</text>
+    <x>11</x>
+    <y>574</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_177</name>
+    <text>18</text>
+    <x>11</x>
+    <y>604</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_178</name>
+    <text>19</text>
+    <x>11</x>
+    <y>634</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_179</name>
+    <text>Not Assigned</text>
+    <x>45</x>
+    <y>454</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_180</name>
+    <text>Not Assigned</text>
+    <x>45</x>
+    <y>484</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_181</name>
+    <text>Not Assigned</text>
+    <x>45</x>
+    <y>514</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_182</name>
+    <text>Not Assigned</text>
+    <x>45</x>
+    <y>544</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_183</name>
+    <text>Not Assigned</text>
+    <x>45</x>
+    <y>574</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_184</name>
+    <text>20</text>
+    <x>314</x>
+    <y>64</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_185</name>
+    <text>21</text>
+    <x>314</x>
+    <y>94</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_186</name>
+    <text>22</text>
+    <x>314</x>
+    <y>124</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_187</name>
+    <text>23</text>
+    <x>314</x>
+    <y>154</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_188</name>
+    <text>24</text>
+    <x>314</x>
+    <y>184</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_189</name>
+    <text>25</text>
+    <x>314</x>
+    <y>214</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_190</name>
+    <text>26</text>
+    <x>314</x>
+    <y>244</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_191</name>
+    <text>27</text>
+    <x>314</x>
+    <y>274</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_192</name>
+    <text>28</text>
+    <x>314</x>
+    <y>304</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_193</name>
+    <text>29</text>
+    <x>314</x>
+    <y>334</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_194</name>
+    <text>30</text>
+    <x>314</x>
+    <y>364</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_195</name>
+    <text>31</text>
+    <x>314</x>
+    <y>394</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_196</name>
+    <text>32</text>
+    <x>314</x>
+    <y>424</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_197</name>
+    <text>33</text>
+    <x>314</x>
+    <y>454</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_198</name>
+    <text>34</text>
+    <x>314</x>
+    <y>484</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_199</name>
+    <text>Not Assigned</text>
+    <x>348</x>
+    <y>484</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_200</name>
+    <text>Delta PS1 Temp</text>
+    <x>348</x>
+    <y>514</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_145</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS1:Temp-I</pv_name>
+    <x>502</x>
+    <y>514</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_201</name>
+    <text>Delta PS2 Temp</text>
+    <x>348</x>
+    <y>544</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_146</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS2:Temp-I</pv_name>
+    <x>502</x>
+    <y>544</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_202</name>
+    <text>Delta PS3 Temp</text>
+    <x>348</x>
+    <y>574</y>
+    <width>150</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update_147</name>
+    <pv_name>$(PriSys){$(PSC)}:Delta:PS3:Temp-I</pv_name>
+    <x>502</x>
+    <y>574</y>
+    <height>25</height>
+    <precision>1</precision>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_203</name>
+    <text>35</text>
+    <x>314</x>
+    <y>514</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_204</name>
+    <text>36</text>
+    <x>314</x>
+    <y>544</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_205</name>
+    <text>37</text>
+    <x>314</x>
+    <y>574</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_206</name>
+    <text>38</text>
+    <x>314</x>
+    <y>604</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_207</name>
+    <text>39</text>
+    <x>314</x>
+    <y>634</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_208</name>
+    <text>40</text>
+    <x>617</x>
+    <y>64</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_209</name>
+    <text>41</text>
+    <x>617</x>
+    <y>94</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_210</name>
+    <text>42</text>
+    <x>617</x>
+    <y>124</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_211</name>
+    <text>43</text>
+    <x>617</x>
+    <y>154</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_212</name>
+    <text>44</text>
+    <x>617</x>
+    <y>184</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_213</name>
+    <text>45</text>
+    <x>617</x>
+    <y>214</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_214</name>
+    <text>46</text>
+    <x>617</x>
+    <y>244</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_215</name>
+    <text>47</text>
+    <x>617</x>
+    <y>274</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_216</name>
+    <text>48</text>
+    <x>617</x>
+    <y>304</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_217</name>
+    <text>49</text>
+    <x>617</x>
+    <y>334</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_218</name>
+    <text>50</text>
+    <x>617</x>
+    <y>364</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_219</name>
+    <text>51</text>
+    <x>617</x>
+    <y>394</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_220</name>
+    <text>52</text>
+    <x>617</x>
+    <y>424</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_221</name>
+    <text>53</text>
+    <x>617</x>
+    <y>454</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_222</name>
+    <text>54</text>
+    <x>617</x>
+    <y>484</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_223</name>
+    <text>55</text>
+    <x>617</x>
+    <y>514</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_224</name>
+    <text>56</text>
+    <x>617</x>
+    <y>544</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_225</name>
+    <text>57</text>
+    <x>617</x>
+    <y>574</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_226</name>
+    <text>58</text>
+    <x>617</x>
+    <y>604</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_227</name>
+    <text>59</text>
+    <x>617</x>
+    <y>634</y>
+    <width>30</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_228</name>
+    <text>Not Assigned</text>
+    <x>651</x>
+    <y>274</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_229</name>
+    <text>Not Assigned</text>
+    <x>651</x>
+    <y>394</y>
+    <width>254</width>
+    <height>25</height>
+    <font>
+      <font family="Liberation Mono" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <background_color>
+      <color name="Button_Background" red="210" green="210" blue="210">
+      </color>
+    </background_color>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_45</name>
+    <text>Bipolar Converter Telemetry</text>
+    <x>299</x>
+    <y>5</y>
+    <width>325</width>
+    <height>40</height>
+    <font>
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <actions>
+    </actions>
+    <border_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </border_color>
+  </widget>
+</display>

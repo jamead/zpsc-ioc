@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--Saved on 2026-05-12 12:13:59 by mead-->
 <display version="2.0.0">
   <name>$(PriSys):$(PSC)</name>
   <width>825</width>
@@ -806,14 +807,14 @@ $(pv_value)</tooltip>
       <name>Action Button_35</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_maindipole.bob</file>
+          <file>main_dipole/zpsc_chan_maindipole_CH1.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>Chan1</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch1 - Main Dipole</text>
@@ -831,7 +832,6 @@ $(pv_value)</tooltip>
       <name>Action Button_38</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
           <file>zpsc_chan_bipolar.opi</file>
           <macros>
             <PriSys>lab</PriSys>
@@ -839,6 +839,7 @@ $(pv_value)</tooltip>
             <CHAN>Chan2</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch2 - Bipolar</text>
@@ -866,14 +867,14 @@ $(pv_value)</tooltip>
       <name>Action Button_39</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
+          <file>zpsc_chan_unipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>Chan2</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch2 - Unipolar</text>
@@ -901,7 +902,6 @@ $(pv_value)</tooltip>
       <name>Action Button_44</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
           <file>zpsc_chan_bipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
@@ -909,6 +909,7 @@ $(pv_value)</tooltip>
             <CHAN>Chan4</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch4 - Bipolar</text>
@@ -934,14 +935,14 @@ $(pv_value)</tooltip>
       <name>Action Button_43</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
+          <file>zpsc_chan_unipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>Chan4</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch4 - Unipolar</text>
@@ -967,7 +968,6 @@ $(pv_value)</tooltip>
       <name>Action Button_46</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
           <file>zpsc_chan_bipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
@@ -975,6 +975,7 @@ $(pv_value)</tooltip>
             <CHAN>Chan3</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch3 - Bipolar</text>
@@ -1000,14 +1001,14 @@ $(pv_value)</tooltip>
       <name>Action Button_45</name>
       <actions>
         <action type="open_display">
-          <description>Open Display</description>
-          <file>zpsc1_chan_unipolar.bob</file>
+          <file>zpsc_chan_unipolar.bob</file>
           <macros>
             <PriSys>lab</PriSys>
             <PSC>$(PSC)</PSC>
             <CHAN>Chan3</CHAN>
           </macros>
           <target>window</target>
+          <description>Open Display</description>
         </action>
       </actions>
       <text>Ch3 - Unipolar</text>
