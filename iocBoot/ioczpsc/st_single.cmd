@@ -75,10 +75,10 @@ iocInit
 
 
 ## Start any sequence programs
-seq ch_fsm,"M0=lab{1},M1=Chan1"
-seq ch_fsm,"M0=lab{1},M1=Chan2"
-seq ch_fsm,"M0=lab{1},M1=Chan3"
-seq ch_fsm,"M0=lab{1},M1=Chan4"
+#seq ch_fsm,"M0=lab{1},M1=Chan1"
+#seq ch_fsm,"M0=lab{1},M1=Chan2"
+#seq ch_fsm,"M0=lab{1},M1=Chan3"
+#seq ch_fsm,"M0=lab{1},M1=Chan4"
 
 
 

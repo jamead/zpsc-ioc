@@ -902,13 +902,16 @@ record(longin, "$(P){$(NO)}Chan1:FaultClear-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan1:FaultMask-I") {
-    field(DESC, "Fault 3 Fault Counter Limit")
+
+record(mbbiDirect, "$(P){$(NO)}Chan1:FaultMask-I") {
+    field(DESC, "Channel 1 Fault Mask")
     field(DTYP, "PSC Reg")
-    field(INP , "@PSC$(NO) 31 288")
-    field(SCAN,"I/O Intr")
-    field(EGU,  "")
+    field(INP,  "@PSC$(NO) 31 288")
+    field(SCAN, "I/O Intr")
+    field(NOBT, "13")
 }
+
+
 
 record(longin, "$(P){$(NO)}Chan1:DigOut_ON1-I") {
     field(DESC, "Digital Output ON1")
@@ -1641,12 +1644,12 @@ record(longin, "$(P){$(NO)}Chan2:FaultClear-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan2:FaultMask-I") {
-    field(DESC, "Fault 3 Fault Counter Limit")
+record(mbbiDirect, "$(P){$(NO)}Chan2:FaultMask-I") {
+    field(DESC, "Channel 2 Fault Mask")
     field(DTYP, "PSC Reg")
-    field(INP , "@PSC$(NO) 31 588")
-    field(SCAN,"I/O Intr")
-    field(EGU,  "")
+    field(INP,  "@PSC$(NO) 31 588")
+    field(SCAN, "I/O Intr")
+    field(NOBT, "13")
 }
 
 record(longin, "$(P){$(NO)}Chan2:DigOut_ON1-I") {
@@ -2378,12 +2381,12 @@ record(longin, "$(P){$(NO)}Chan3:FaultClear-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan3:FaultMask-I") {
-    field(DESC, "Fault 3 Fault Counter Limit")
+record(mbbiDirect, "$(P){$(NO)}Chan3:FaultMask-I") {
+    field(DESC, "Channel 3 Fault Mask")
     field(DTYP, "PSC Reg")
-    field(INP , "@PSC$(NO) 31 888")
-    field(SCAN,"I/O Intr")
-    field(EGU,  "")
+    field(INP,  "@PSC$(NO) 31 888")
+    field(SCAN, "I/O Intr")
+    field(NOBT, "13")
 }
 
 record(longin, "$(P){$(NO)}Chan3:DigOut_ON1-I") {
@@ -3115,12 +3118,12 @@ record(longin, "$(P){$(NO)}Chan4:FaultClear-I") {
     field(EGU,  "")
 }
 
-record(longin, "$(P){$(NO)}Chan4:FaultMask-I") {
-    field(DESC, "Fault 3 Fault Counter Limit")
+record(mbbiDirect, "$(P){$(NO)}Chan4:FaultMask-I") {
+    field(DESC, "Channel 4 Fault Mask")
     field(DTYP, "PSC Reg")
-    field(INP , "@PSC$(NO) 31 1188")
-    field(SCAN,"I/O Intr")
-    field(EGU,  "")
+    field(INP,  "@PSC$(NO) 31 1188")
+    field(SCAN, "I/O Intr")
+    field(NOBT, "13")
 }
 
 record(longin, "$(P){$(NO)}Chan4:DigOut_ON1-I") {
